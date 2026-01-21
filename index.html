@@ -3,31 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Целиком — WMS-система для фулфилментов, которая подстраивается под ваши процессы">
+    <meta name="description" content="WMS-система для фулфилментов, которая подстраивается под ваши процессы. Персональная презентация, 2 недели бесплатного тестирования.">
+    <meta name="author" content="Целиком">
     <title>Целиком — WMS-система для фулфилментов</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Целиком — WMS-система для фулфилментов">
+    <meta property="og:description" content="WMS-система для фулфилментов, которая подстраивается под ваши процессы">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container header__container">
-            <a href="/" class="header__logo">
-                <svg class="header__logo-icon" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Placeholder для логотипа -->
-                    <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.2"/>
-                    <text x="40" y="22" fill="currentColor" font-size="18" font-weight="600">ЦЕЛИКОМ</text>
+        <div class="container-wide header__container">
+            <a href="#hero" class="header__logo">
+                <!-- Логотип Целиком (только иконка) -->
+                <svg class="header__logo-icon" viewBox="0 0 218 171" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M152.3,33.3V0h17v33.3c-2.5-1.3-5.4-2.1-8.5-2.1s-6,.8-8.5,2.1ZM142.3,49.6c0-4.5,1.6-8.6,4.3-11.8V0h-12.2c-2.6,0-4.8,2.1-4.8,4.8v47.2c0,2.6,2.1,4.8,4.8,4.8h9.4c-.9-2.2-1.4-4.6-1.4-7.1ZM174.9,0v37.8c2.7,3.2,4.3,7.3,4.3,11.8s-.5,4.9-1.4,7.1h9.4c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8h-12.2ZM87.1,62.4c.9,2.2,1.4,4.6,1.4,7.1,0,4.5-1.6,8.6-4.3,11.8v4.4c0,5.9,2.3,11.5,6.5,15.7,4.2,4.2,9.7,6.5,15.7,6.5h6.2v-12.2c0-2.6-2.1-4.8-4.8-4.8h-1.4c-2.8,0-5.1-2.3-5.1-5.1v-18.4c0-2.6-2.1-4.8-4.8-4.8h-9.4ZM125.3,109.1c-3.8,0-7.2,1.6-9.5,4.3h-11c-14.5,0-26.3-11.8-26.3-26.3v-1.3c-2.5,1.3-5.4,2.1-8.5,2.1s-6-.8-8.5-2.1v1.3c0,5.8,1.1,11.5,3.4,16.9,2.2,5.2,5.3,9.8,9.3,13.8s8.6,7.1,13.8,9.3c5.2,2.2,10.6,3.3,16.3,3.4h0s.6,0,.6,0h11c2.3,2.6,5.7,4.3,9.5,4.3,7,0,12.8-5.7,12.8-12.8s-5.7-12.8-12.8-12.8ZM55.9,88.9v-7.7c-2.7-3.2-4.3-7.3-4.3-11.8s.5-4.9,1.4-7.1h-9.4c-2.6,0-4.8,2.1-4.8,4.8v21.8c0,8.7,1.7,17.1,5,25,3.2,7.6,7.9,14.5,13.7,20.4,5.9,5.9,12.7,10.5,20.4,13.7,7.9,3.3,16.3,5,25,5h4.8c2.6,0,4.8-2.1,4.8-4.8v-12.2h-9.6c-26,0-47.1-21.1-47.1-47.1ZM96.5,0h-12.2v56.7h12.2c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8ZM38.9,51.9V4.8C38.9,2.1,41,0,43.6,0h12.2v56.7h-12.2c-2.6,0-4.8-2.1-4.8-4.8ZM82.8,69.4c0,7-5.7,12.8-12.8,12.8s-12.8-5.7-12.8-12.8,1.6-7.2,4.3-9.5v-3.2h0V0h17v56.7h0v3.2c2.6,2.3,4.3,5.7,4.3,9.5ZM133.9,105.6c2.3-1.1,4.3-2.5,6.2-4.4,4.2-4.2,6.5-9.7,6.5-15.7v-23.2h-12.2c-2.6,0-4.8,2.1-4.8,4.8v18.4c0,2.8-2.3,5.1-5.1,5.1h-1.4c-2.6,0-4.8,2.1-4.8,4.8v9.4c2.2-.9,4.6-1.4,7.1-1.4s6,.8,8.6,2.1ZM152.3,59.1v3.2h0v24.7c0,9.7-5.2,18.1-13,22.7,2.8,3.2,4.5,7.5,4.5,12.1s-.2,3.4-.7,5c5.1-2.2,9.6-5.3,13.5-9.2,4-4,7.1-8.6,9.3-13.8,2.2-5.2,3.3-10.6,3.4-16.3h0v-.6s0,0,0,0v-24.7h0v-3.2c2.6-2.3,4.3-5.7,4.3-9.5,0-7-5.7-12.8-12.8-12.8s-12.8,5.7-12.8,12.8,1.6,7.2,4.3,9.5ZM180.1,110.3c.6.3,1.1.6,1.7.9,7.1,3.1,11.7,6.8,15.1,9.7,4,3.3,4.7,3.9,8.6,3.9h11.7c0,0,.1,0,.2,0,0,0,0-.9-.5-2.8h0c0,0,0-.1,0-.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-1.5-4.4-3.6-8.3-6.2-11.6-5.7-7.4-12.6-10.7-17.2-12.8-.5-.2-1-.5-1.6-.7v-29.3c0-2.6-2.1-4.8-4.8-4.8h-12.2v36.9c0,2.7.4,8.5,5.2,11.1ZM180.1,145.7c-4.9-4.3-11-9.6-25-9.6h-18c-3.2,2.7-7.3,4.3-11.8,4.3s-4.9-.5-7.1-1.4v9.4c0,2.6,2.1,4.8,4.8,4.8h32.1c7.6,0,9.8,1.9,13.8,5.4,2.8,2.5,6.3,5.5,11.8,7.9,5.9,2.5,13,3.7,21.9,3.7h10.1c2.6,0,4.8-2.1,4.8-4.8v-12.2h-14.8c-14.1,0-18-3.4-22.5-7.4ZM193.4,125.2c-3.8-3.1-8.5-6.9-16.4-9.9-2.8-1.1-5.9-1.9-9.3-2.6-2,3.3-4.4,6.3-7.1,9s-4.8,4.4-7.5,6.1c18.2,1.3,24.2,6.1,29.5,10.5,5.1,4.2,11,9,22.9,9h11.9v-17h-11.9c-5.9,0-7.8-1.6-12.2-5.1Z"/>
                 </svg>
+                <span>ЦЕЛИКОМ</span>
             </a>
+            
             <nav class="header__nav">
-                <a href="#features" class="header__link">Возможности</a>
-                <a href="#how-it-works" class="header__link">Как это работает</a>
-                <a href="#pricing" class="header__link">Тарифы</a>
-                <a href="#about" class="header__link">О нас</a>
+                <a href="#hero" class="header__link">Главная</a>
+                <a href="#functionality" class="header__link">Функционал</a>
+                <a href="#implementation" class="header__link">Внедрение</a>
+                <a href="#cases" class="header__link">Кейсы</a>
+                <a href="#pricing" class="header__link">Цены</a>
+                <a href="#about" class="header__link">О компании</a>
             </nav>
-            <a href="#contact" class="header__cta btn btn--small">Связаться</a>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <svg class="theme-toggle__icon theme-toggle__icon--light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            
+            <a href="#contact" class="btn-primary btn-small header__cta">Запросить презентацию</a>
+            
             <button class="header__burger" aria-label="Открыть меню">
                 <span></span>
                 <span></span>
@@ -39,120 +71,286 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <nav class="mobile-menu__nav">
-            <a href="#features" class="mobile-menu__link">Возможности</a>
-            <a href="#how-it-works" class="mobile-menu__link">Как это работает</a>
-            <a href="#pricing" class="mobile-menu__link">Тарифы</a>
-            <a href="#about" class="mobile-menu__link">О нас</a>
-            <a href="#contact" class="mobile-menu__link btn btn--primary">Связаться</a>
+            <a href="#hero" class="mobile-menu__link">Главная</a>
+            <a href="#functionality" class="mobile-menu__link">Функционал</a>
+            <a href="#implementation" class="mobile-menu__link">Внедрение</a>
+            <a href="#cases" class="mobile-menu__link">Кейсы</a>
+            <a href="#pricing" class="mobile-menu__link">Цены</a>
+            <a href="#about" class="mobile-menu__link">О компании</a>
+            <a href="#contact" class="btn-primary" style="margin-top: 1rem;">Запросить презентацию</a>
         </nav>
     </div>
 
     <main>
-        <!-- Hero Section - Экран 1 -->
-        <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">
-                        WMS-система для фулфилментов, которая подстраивается под ваши процессы
-                    </h1>
-                    <p class="hero__subtitle">
-                        Мы не продаём «коробку».<br>
-                        Мы разбираем ваш склад, показываем, как система ляжет на ваши процессы — и&nbsp;только потом предлагаем решение.
-                    </p>
-                    <ul class="hero__features">
-                        <li class="hero__feature">
-                            <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Персональная презентация под ваш склад</span>
-                        </li>
-                        <li class="hero__feature">
-                            <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Консультация по структуризации процессов</span>
-                        </li>
-                        <li class="hero__feature">
-                            <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>2 недели бесплатного тестирования системы</span>
-                        </li>
-                    </ul>
-                    <div class="hero__cta">
-                        <a href="#contact" class="btn btn--primary">
-                            Записаться на персональную презентацию
-                        </a>
-                        <a href="#learn-more" class="btn btn--secondary">
-                            Узнать, подойдёт ли система
-                        </a>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero__visual-container">
-                        <!-- Placeholder для изображения склада -->
-                        <div class="hero__image-placeholder">
-                            <svg class="hero__warehouse-icon" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Склад -->
-                                <rect x="20" y="60" width="160" height="80" rx="4" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-                                <rect x="30" y="70" width="30" height="60" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                                <rect x="70" y="70" width="30" height="60" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                                <rect x="110" y="70" width="30" height="60" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                                <rect x="150" y="70" width="20" height="60" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                                <!-- Крыша -->
-                                <path d="M10 60 L100 20 L190 60" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-                            </svg>
+        <!-- ========================================
+             ЭКРАН 1 — HERO
+             ======================================== -->
+        <section class="hero" id="hero">
+            <!-- Apple-like fold on scroll (reversible) -->
+            <div class="hero-fold" data-hero-fold>
+                <div class="hero-fold__sticky">
+                    <div class="container-wide hero__container">
+                        <!-- Левая часть: Текст -->
+                        <div class="hero__content">
+                            <h1 class="heading-1 hero__title">
+                                WMS-система для фулфилментов, которая подстраивается под&nbsp;ваши процессы
+                            </h1>
+                            
+                            <p class="body-large hero__subtitle">
+                                Мы не продаём «коробку».<br>
+                                Мы разбираем ваш склад, показываем, как система ляжет на ваши процессы — и&nbsp;только потом предлагаем решение.
+                            </p>
+                            
+                            <ul class="hero__features">
+                                <li class="hero__feature">
+                                    <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Персональная презентация под ваш склад</span>
+                                </li>
+                                <li class="hero__feature">
+                                    <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Консультация по структуризации процессов</span>
+                                </li>
+                                <li class="hero__feature">
+                                    <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>2 недели бесплатного тестирования системы</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="hero__cta">
+                                <a href="#contact" class="btn-primary">
+                                    Записаться на персональную презентацию
+                                </a>
+                                <a href="#implementation" class="btn-secondary">
+                                    Узнать, подойдёт ли система
+                                </a>
+                            </div>
                         </div>
                         
-                        <!-- Overlay элементы -->
-                        <div class="hero__overlay-elements">
-                            <!-- Карточка с процессом -->
-                            <div class="hero__overlay-card hero__overlay-card--process">
-                                <div class="hero__overlay-card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
+                        <!-- Правая часть: Визуал — Mockup реального интерфейса WMS -->
+                        <div class="hero__visual">
+                            <div class="hero__mockup">
+                                <!-- Browser Window Frame -->
+                                <div class="mockup__browser" data-hero-mockup>
+                                    <div class="mockup__browser-header">
+                                        <div class="mockup__browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="mockup__browser-url">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                            </svg>
+                                            <span>app.celikom.ru/warehouse/items/</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Real System Interface -->
+                                    <div class="mockup__content">
+                                <!-- Sidebar - как в реальной системе -->
+                                <div class="mockup__sidebar">
+                                    <div class="mockup__logo">
+                                        <svg class="mockup__logo-svg" viewBox="0 0 218 171" fill="currentColor">
+                                            <path d="M152.3,33.3V0h17v33.3c-2.5-1.3-5.4-2.1-8.5-2.1s-6,.8-8.5,2.1ZM142.3,49.6c0-4.5,1.6-8.6,4.3-11.8V0h-12.2c-2.6,0-4.8,2.1-4.8,4.8v47.2c0,2.6,2.1,4.8,4.8,4.8h9.4c-.9-2.2-1.4-4.6-1.4-7.1ZM174.9,0v37.8c2.7,3.2,4.3,7.3,4.3,11.8s-.5,4.9-1.4,7.1h9.4c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8h-12.2ZM87.1,62.4c.9,2.2,1.4,4.6,1.4,7.1,0,4.5-1.6,8.6-4.3,11.8v4.4c0,5.9,2.3,11.5,6.5,15.7,4.2,4.2,9.7,6.5,15.7,6.5h6.2v-12.2c0-2.6-2.1-4.8-4.8-4.8h-1.4c-2.8,0-5.1-2.3-5.1-5.1v-18.4c0-2.6-2.1-4.8-4.8-4.8h-9.4ZM125.3,109.1c-3.8,0-7.2,1.6-9.5,4.3h-11c-14.5,0-26.3-11.8-26.3-26.3v-1.3c-2.5,1.3-5.4,2.1-8.5,2.1s-6-.8-8.5-2.1v1.3c0,5.8,1.1,11.5,3.4,16.9,2.2,5.2,5.3,9.8,9.3,13.8s8.6,7.1,13.8,9.3c5.2,2.2,10.6,3.3,16.3,3.4h0s.6,0,.6,0h11c2.3,2.6,5.7,4.3,9.5,4.3,7,0,12.8-5.7,12.8-12.8s-5.7-12.8-12.8-12.8ZM55.9,88.9v-7.7c-2.7-3.2-4.3-7.3-4.3-11.8s.5-4.9,1.4-7.1h-9.4c-2.6,0-4.8,2.1-4.8,4.8v21.8c0,8.7,1.7,17.1,5,25,3.2,7.6,7.9,14.5,13.7,20.4,5.9,5.9,12.7,10.5,20.4,13.7,7.9,3.3,16.3,5,25,5h4.8c2.6,0,4.8-2.1,4.8-4.8v-12.2h-9.6c-26,0-47.1-21.1-47.1-47.1ZM96.5,0h-12.2v56.7h12.2c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8ZM38.9,51.9V4.8C38.9,2.1,41,0,43.6,0h12.2v56.7h-12.2c-2.6,0-4.8-2.1-4.8-4.8ZM82.8,69.4c0,7-5.7,12.8-12.8,12.8s-12.8-5.7-12.8-12.8,1.6-7.2,4.3-9.5v-3.2h0V0h17v56.7h0v3.2c2.6,2.3,4.3,5.7,4.3,9.5ZM133.9,105.6c2.3-1.1,4.3-2.5,6.2-4.4,4.2-4.2,6.5-9.7,6.5-15.7v-23.2h-12.2c-2.6,0-4.8,2.1-4.8,4.8v18.4c0,2.8-2.3,5.1-5.1,5.1h-1.4c-2.6,0-4.8,2.1-4.8,4.8v9.4c2.2-.9,4.6-1.4,7.1-1.4s6,.8,8.6,2.1ZM152.3,59.1v3.2h0v24.7c0,9.7-5.2,18.1-13,22.7,2.8,3.2,4.5,7.5,4.5,12.1s-.2,3.4-.7,5c5.1-2.2,9.6-5.3,13.5-9.2,4-4,7.1-8.6,9.3-13.8,2.2-5.2,3.3-10.6,3.4-16.3h0v-.6s0,0,0,0v-24.7h0v-3.2c2.6-2.3,4.3-5.7,4.3-9.5,0-7-5.7-12.8-12.8-12.8s-12.8,5.7-12.8,12.8,1.6,7.2,4.3,9.5ZM180.1,110.3c.6.3,1.1.6,1.7.9,7.1,3.1,11.7,6.8,15.1,9.7,4,3.3,4.7,3.9,8.6,3.9h11.7c0,0,.1,0,.2,0,0,0,0-.9-.5-2.8h0c0,0,0-.1,0-.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-1.5-4.4-3.6-8.3-6.2-11.6-5.7-7.4-12.6-10.7-17.2-12.8-.5-.2-1-.5-1.6-.7v-29.3c0-2.6-2.1-4.8-4.8-4.8h-12.2v36.9c0,2.7.4,8.5,5.2,11.1ZM180.1,145.7c-4.9-4.3-11-9.6-25-9.6h-18c-3.2,2.7-7.3,4.3-11.8,4.3s-4.9-.5-7.1-1.4v9.4c0,2.6,2.1,4.8,4.8,4.8h32.1c7.6,0,9.8,1.9,13.8,5.4,2.8,2.5,6.3,5.5,11.8,7.9,5.9,2.5,13,3.7,21.9,3.7h10.1c2.6,0,4.8-2.1,4.8-4.8v-12.2h-14.8c-14.1,0-18-3.4-22.5-7.4ZM193.4,125.2c-3.8-3.1-8.5-6.9-16.4-9.9-2.8-1.1-5.9-1.9-9.3-2.6-2,3.3-4.4,6.3-7.1,9s-4.8,4.4-7.5,6.1c18.2,1.3,24.2,6.1,29.5,10.5,5.1,4.2,11,9,22.9,9h11.9v-17h-11.9c-5.9,0-7.8-1.6-12.2-5.1Z"/>
+                                        </svg>
+                                        <div class="mockup__logo-text">
+                                            <span class="mockup__logo-wms">WMS</span>
+                                            <span class="mockup__logo-name">ЦЕЛИКОМ</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mockup__user">
+                                        <div class="mockup__user-avatar">МК</div>
+                                        <div class="mockup__user-info">
+                                            <span class="mockup__user-name">Михаил К.</span>
+                                            <span class="mockup__user-role">Админ</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mockup__nav">
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                            <span>Рабочий стол</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                                            <span>База знаний</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                                            <span>FBS</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                                            <span>Работы</span>
+                                            <span class="mockup__nav-badge">12</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                                            <span>Задания</span>
+                                            <span class="mockup__nav-badge mockup__nav-badge--red">1</span>
+                                        </div>
+                                        <div class="mockup__nav-item mockup__nav-item--active">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                            <span>Товары</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                            <span>Клиенты</span>
+                                        </div>
+                                        <div class="mockup__nav-item">
+                                            <svg class="mockup__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                                            <span>Места хранения</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hero__overlay-card-content">
-                                    <span class="hero__overlay-card-label">Приёмка</span>
-                                    <span class="hero__overlay-card-value">Автоматизирована</span>
+                                
+                                <!-- Main Area - Таблица товаров -->
+                                <div class="mockup__main">
+                                    <!-- Toolbar -->
+                                    <div class="mockup__toolbar">
+                                        <div class="mockup__toolbar-tabs">
+                                            <span class="mockup__tab mockup__tab--active">Показать все</span>
+                                            <span class="mockup__tab">Скрыть подчиненные</span>
+                                            <span class="mockup__tab mockup__tab--accent">+ Добавить товар</span>
+                                        </div>
+                                        <div class="mockup__toolbar-pagination">
+                                            <span>Пред.</span>
+                                            <span class="mockup__page mockup__page--active">1</span>
+                                            <span class="mockup__page">2</span>
+                                            <span class="mockup__page">3</span>
+                                            <span>...</span>
+                                            <span class="mockup__page">161</span>
+                                            <span>След.</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Filters -->
+                                    <div class="mockup__filters">
+                                        <input type="text" class="mockup__filter-input" placeholder="Артикул" readonly>
+                                        <input type="text" class="mockup__filter-input mockup__filter-input--sm" placeholder="Цвет" readonly>
+                                        <input type="text" class="mockup__filter-input mockup__filter-input--sm" placeholder="Размер" readonly>
+                                        <input type="text" class="mockup__filter-input" placeholder="Название" readonly>
+                                        <input type="text" class="mockup__filter-input" placeholder="Barcode" readonly>
+                                    </div>
+                                    
+                                    <!-- Products Table -->
+                                    <div class="mockup__table">
+                                        <div class="mockup__table-row mockup__table-row--header">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span>Артикул</span>
+                                            <span>Цвет</span>
+                                            <span>Название</span>
+                                            <span>Клиент</span>
+                                            <span>Фото</span>
+                                            <span>Остаток</span>
+                                        </div>
+                                        <div class="mockup__table-row">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span class="mockup__cell--code">SKU-1847</span>
+                                            <span>синий</span>
+                                            <span class="mockup__cell--name">Рюкзак городской 25L</span>
+                                            <span>Смирнов А.</span>
+                                            <span class="mockup__cell--img">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/><rect x="2" y="20" width="20" height="2" rx="1"/></svg>
+                                            </span>
+                                            <span class="mockup__cell--link">3420/2180</span>
+                                        </div>
+                                        <div class="mockup__table-row">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span class="mockup__cell--code">SKU-2901</span>
+                                            <span>белый</span>
+                                            <span class="mockup__cell--name">Футболка оверсайз хлопок</span>
+                                            <span>Козлова М.</span>
+                                            <span class="mockup__cell--img">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l-3 4v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-3-4H6z"/><path d="M9 3v4a3 3 0 0 0 6 0V3"/></svg>
+                                            </span>
+                                            <span class="mockup__cell--link">7850/4320</span>
+                                        </div>
+                                        <div class="mockup__table-row">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span class="mockup__cell--code">SKU-0583</span>
+                                            <span>черный</span>
+                                            <span class="mockup__cell--name">Кроссовки беговые Air</span>
+                                            <span>Петров И.</span>
+                                            <span class="mockup__cell--img">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="17" rx="8" ry="4"/><path d="M4 17c0-4 3-8 8-11 5 3 8 7 8 11"/><circle cx="12" cy="9" r="2"/></svg>
+                                            </span>
+                                            <span class="mockup__cell--link">1205/890</span>
+                                        </div>
+                                        <div class="mockup__table-row">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span class="mockup__cell--code">SKU-7294</span>
+                                            <span>серый</span>
+                                            <span class="mockup__cell--name">Худи с капюшоном флис</span>
+                                            <span>Новикова Е.</span>
+                                            <span class="mockup__cell--img">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4-3h8l4 3v15H4V6z"/><path d="M4 6h16"/><circle cx="12" cy="12" r="3"/></svg>
+                                            </span>
+                                            <span class="mockup__cell--link">2640/1850</span>
+                                        </div>
+                                        <div class="mockup__table-row">
+                                            <span class="mockup__cell--check">☐</span>
+                                            <span class="mockup__cell--code">SKU-4156</span>
+                                            <span>зеленый</span>
+                                            <span class="mockup__cell--name">Бутылка спортивная 750мл</span>
+                                            <span>Иванов Д.</span>
+                                            <span class="mockup__cell--img">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8v3H8z"/><path d="M7 5h10l1 17H6L7 5z"/><path d="M9 10c0 2 1.5 3 3 3s3-1 3-3"/></svg>
+                                            </span>
+                                            <span class="mockup__cell--link">5120/3200</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <!-- Карточка со статистикой -->
-                            <div class="hero__overlay-card hero__overlay-card--stats">
-                                <div class="hero__overlay-card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <line x1="18" y1="20" x2="18" y2="10"/>
-                                        <line x1="12" y1="20" x2="12" y2="4"/>
-                                        <line x1="6" y1="20" x2="6" y2="14"/>
-                                    </svg>
+                                    </div>
                                 </div>
-                                <div class="hero__overlay-card-content">
-                                    <span class="hero__overlay-card-label">Заказов/час</span>
-                                    <span class="hero__overlay-card-value">до 200</span>
+                                
+                                <!-- Floating Cards вокруг mockup -->
+                                <div class="hero__float-card hero__float-card--1" data-hero-float>
+                                    <div class="hero__float-card-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="hero__float-card-content">
+                                        <span class="hero__float-card-label">Время отклика</span>
+                                        <span class="hero__float-card-value">~5 минут</span>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <!-- Стрелка процесса -->
-                            <svg class="hero__arrow hero__arrow--1" viewBox="0 0 60 30" fill="none">
-                                <path d="M5 15 Q30 5 55 15" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
-                                <polygon points="55,15 48,10 48,20" fill="currentColor"/>
-                            </svg>
-                            
-                            <!-- Иконка контроля -->
-                            <div class="hero__control-badge">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                    <path d="M9 12l2 2 4-4"/>
-                                </svg>
-                            </div>
-                            
-                            <!-- Метрика ошибок -->
-                            <div class="hero__overlay-card hero__overlay-card--errors">
-                                <span class="hero__overlay-card-value hero__overlay-card-value--highlight">-87%</span>
-                                <span class="hero__overlay-card-label">ошибок</span>
+                                
+                                <div class="hero__float-card hero__float-card--2" data-hero-float>
+                                    <div class="hero__float-card-icon hero__float-card-icon--green">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                    </div>
+                                    <div class="hero__float-card-content">
+                                        <span class="hero__float-card-label">Ошибок</span>
+                                        <span class="hero__float-card-value">−87%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="hero__float-card hero__float-card--3" data-hero-float>
+                                    <div class="hero__float-card-icon hero__float-card-icon--blue">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="1" y="3" width="15" height="13"/>
+                                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                                        </svg>
+                                    </div>
+                                    <div class="hero__float-card-content">
+                                        <span class="hero__float-card-label">FBS в час</span>
+                                        <span class="hero__float-card-value">до 3000</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,17 +358,1744 @@
             </div>
         </section>
 
-        <!-- Placeholder для остальных секций -->
-        <!-- Секции 2-13 будут добавлены позже -->
+        <!-- ========================================
+             ФУНКЦИОНАЛ (из скелета) — Экосистема / Базовый / Вау
+             ======================================== -->
+        <section class="section section--functionality" id="functionality">
+            <div class="container">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Функционал</span>
+                    <h2 class="h2" data-animate>Целиком — это единое рабочее пространство для фулфилмента</h2>
+                    <p class="lead" data-animate>Одна система для всех участников процесса</p>
+                </div>
+            </div>
+
+            <!-- Live metrics (будут тянуться из админки / API) -->
+            <div class="container-wide live-metrics" data-live-metrics>
+                <div class="live-metrics__head">
+                    <div>
+                        <div class="live-metrics__kicker">Доверие</div>
+                        <h3 class="live-metrics__title">Целиком в 2025 году</h3>
+                    </div>
+                    <div class="live-metrics__meta">
+                        <div class="live-metrics__meta-label">Источник</div>
+                        <div class="live-metrics__meta-value">админка / рабочий контур</div>
+                        <div class="live-metrics__meta-sub">Обновление: <span data-metrics-updated>—</span></div>
+                    </div>
+                </div>
+
+                <div class="live-metrics__grid" aria-label="Ключевые показатели">
+                    <div class="live-metric" data-metric data-key="clients" data-default="170">
+                        <div class="live-metric__label">Клиентов в системе</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric" data-metric data-key="sellers" data-default="8700">
+                        <div class="live-metric__label">Селлеров</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric" data-metric data-key="uniqueApi" data-default="11000">
+                        <div class="live-metric__label">Уникальных API</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric" data-metric data-key="productCards" data-default="2700000">
+                        <div class="live-metric__label">Карточек товаров</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric" data-metric data-key="unitsAccepted" data-default="89000000">
+                        <div class="live-metric__label">Единиц товара принято</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric" data-metric data-key="czChecked" data-default="14000000">
+                        <div class="live-metric__label">ЧЗ проверено</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric live-metric--mini" data-metric data-key="shipments" data-default="200000">
+                        <div class="live-metric__label">Отгрузок сделано</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric live-metric--mini" data-metric data-key="cargoPlaces" data-default="2050000">
+                        <div class="live-metric__label">Грузомест отгружено</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric live-metric--mini" data-metric data-key="unitsShipped" data-default="52000000">
+                        <div class="live-metric__label">Единиц товара отгружено</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                    <div class="live-metric live-metric--mini" data-metric data-key="fbsOrders" data-default="2500000">
+                        <div class="live-metric__label">Обработано заказов по FBS</div>
+                        <div class="live-metric__value"><span data-metric-value>—</span></div>
+                    </div>
+                </div>
+
+                <div class="live-metrics__foot">
+                    <div class="live-metrics__note">Сделаем такой же дашборд по вашим цифрам — на презентации.</div>
+                    <a href="#contact" class="btn-secondary live-metrics__cta">Запросить презентацию →</a>
+                </div>
+            </div>
+
+            <!-- Экосистема ролей -->
+            <div class="container-wide ecosystem" data-ecosystem>
+                <div class="ecosystem__grid">
+                    <svg class="ecosystem__lines" data-ecosystem-lines aria-hidden="true">
+                        <path class="ecosystem__line ecosystem__line--blue" data-ecosystem-line="seller" d="M0 0" />
+                        <path class="ecosystem__line ecosystem__line--green" data-ecosystem-line="manager" d="M0 0" />
+                        <path class="ecosystem__line ecosystem__line--violet" data-ecosystem-line="warehouse" d="M0 0" />
+                        <path class="ecosystem__line ecosystem__line--orange" data-ecosystem-line="logistics" d="M0 0" />
+                    </svg>
+
+                    <article class="role-card role-card--seller" data-animate>
+                        <div class="role-card__head">
+                            <div class="role-card__icon role-card__icon--blue" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <h3 class="role-card__title">Для клиента фулфилмента (селлера)</h3>
+                        </div>
+                        <ul class="role-card__list">
+                            <li>Создание карточек товара</li>
+                            <li>Заявки на поставку, отгрузку и возвраты</li>
+                            <li>Все заказы FBS в одном месте</li>
+                            <li>Видео приёмки и сборки</li>
+                            <li>Счета, акты и отчёты</li>
+                        </ul>
+                        <div class="role-card__result">Результат: Меньше вопросов и больше доверия</div>
+                    </article>
+
+                    <article class="role-card role-card--manager" data-animate data-delay="120">
+                        <div class="role-card__head">
+                            <div class="role-card__icon role-card__icon--green" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="14" rx="2"/>
+                                    <path d="M7 8h10M7 12h6"/>
+                                </svg>
+                            </div>
+                            <h3 class="role-card__title">Для менеджера фулфилмента</h3>
+                        </div>
+                        <ul class="role-card__list">
+                            <li>Общение с клиентами в одном окне</li>
+                            <li>КП в PDF</li>
+                            <li>Автоматические договоры и документы</li>
+                            <li>Учёт оплат</li>
+                            <li>Интеграция с 1С</li>
+                        </ul>
+                        <div class="role-card__result">Результат: Всё под контролем без хаоса</div>
+                    </article>
+
+                    <div class="ecosystem__center" aria-hidden="true">
+                        <div class="ecosystem__badge ecosystem__badge--logo">
+                            <img src="assets/images/logo.svg" alt="" aria-hidden="true">
+                        </div>
+                    </div>
+
+                    <article class="role-card role-card--warehouse" data-animate data-delay="180">
+                        <div class="role-card__head">
+                            <div class="role-card__icon role-card__icon--violet" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/>
+                                    <path d="M12 3v18"/>
+                                    <path d="M3 7l9 4 9-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="role-card__title">Для склада</h3>
+                        </div>
+                        <ul class="role-card__list">
+                            <li>Адресное хранение (4 уровня)</li>
+                            <li>Сканеры и ТСД</li>
+                            <li>Автоматическая печать этикеток</li>
+                            <li>Честный знак</li>
+                            <li>До 3000 заказов в час по FBS</li>
+                        </ul>
+                        <div class="role-card__result">Результат: Быстрее, точнее, без ошибок</div>
+                    </article>
+
+                    <article class="role-card role-card--logistics" data-animate data-delay="240">
+                        <div class="role-card__head">
+                            <div class="role-card__icon role-card__icon--orange" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="3" width="15" height="13"/>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="role-card__title">Для логистики</h3>
+                        </div>
+                        <ul class="role-card__list">
+                            <li>Учёт транспорта</li>
+                            <li>Работа с подрядчиками</li>
+                            <li>Календарь отгрузок</li>
+                            <li>Расчёт расходов</li>
+                        </ul>
+                        <div class="role-card__result">Результат: Прозрачность и экономия</div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Базовый функционал -->
+            <div class="container-wide base" id="base-functional">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Функционал</span>
+                    <h2 class="h2" data-animate>Базовый функционал</h2>
+                    <p class="lead" data-animate>Всё необходимое для работы склада</p>
+                </div>
+
+                <div class="base-grid">
+                    <article class="feature-tile feature-tile--api" data-animate>
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="7" cy="12" r="2.3" fill="currentColor" opacity=".35"/>
+                                <circle cx="17" cy="7" r="2.3" fill="currentColor" opacity=".28"/>
+                                <circle cx="17" cy="17" r="2.3" fill="currentColor" opacity=".28"/>
+                                <path d="M9.3 12H14.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".95"/>
+                                <path d="M15.4 8.3l-3.5 2.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                                <path d="M15.4 15.7l-3.5-2.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Работа по API</h3>
+                        <p class="feature-tile__text">Интеграция с любыми внешними системами</p>
+                    </article>
+                    <article class="feature-tile feature-tile--clients" data-animate data-delay="60">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="9" cy="9" r="2.7" fill="currentColor" opacity=".34"/>
+                                <circle cx="16.4" cy="10" r="2.2" fill="currentColor" opacity=".22"/>
+                                <path d="M4.7 19.2c.9-3 3.1-4.6 6.3-4.6s5.4 1.6 6.3 4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                                <path d="M13.6 15.2c2.2.3 3.8 1.6 4.6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Неограниченное число клиентов</h3>
+                        <p class="feature-tile__text">Товаров и работ без лимитов</p>
+                    </article>
+                    <article class="feature-tile feature-tile--mark" data-animate data-delay="120">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M8 4h8a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" fill="currentColor" opacity=".12"/>
+                                <path d="M8.2 8.2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                                <path d="M8.2 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                                <path d="M8.2 15.8h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+                                <path d="M14.9 14.6l1.5 1.5 2.8-2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Честный знак</h3>
+                        <p class="feature-tile__text">Полная поддержка маркировки товаров</p>
+                    </article>
+                    <article class="feature-tile feature-tile--logistics" data-animate data-delay="180">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M3.5 8h10.5v8.4H3.5V8z" fill="currentColor" opacity=".12"/>
+                                <path d="M14 10h4l2.5 2.6v3.8H14V10z" fill="currentColor" opacity=".16"/>
+                                <path d="M3.5 8h10.5v8.4H3.5V8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" opacity=".8"/>
+                                <path d="M14 10h4l2.5 2.6v3.8H14V10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" opacity=".8"/>
+                                <circle cx="7.3" cy="17.9" r="1.9" fill="currentColor" opacity=".35"/>
+                                <circle cx="17.7" cy="17.9" r="1.9" fill="currentColor" opacity=".35"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Перевозка/Логистика</h3>
+                        <p class="feature-tile__text">Учёт транспорта и работа с подрядчиками</p>
+                    </article>
+
+                    <article class="feature-tile feature-tile--address" data-animate>
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 5h12v14H6V5z" fill="currentColor" opacity=".11"/>
+                                <path d="M6 9h12M6 13h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+                                <path d="M10 5v14M14 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+                                <path d="M12 11.5a2 2 0 1 0-2-2c0 1.3 2 4.1 2 4.1s2-2.8 2-4.1a2 2 0 0 0-2-2z" fill="currentColor" opacity=".35"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Адресное хранение</h3>
+                        <p class="feature-tile__text">4 уровня адресации на складе</p>
+                    </article>
+                    <article class="feature-tile feature-tile--docs" data-animate data-delay="60">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M8 4h9a2 2 0 0 1 2 2v13H8a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="currentColor" opacity=".12"/>
+                                <path d="M6 7h10a2 2 0 0 1 2 2v11" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                                <path d="M9 8.5h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+                                <path d="M9 12h7" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+                                <path d="M9 15.5h5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Документооборот</h3>
+                        <p class="feature-tile__text">Генерация договоров, счетов, актов из системы</p>
+                    </article>
+                    <article class="feature-tile feature-tile--print" data-animate data-delay="120">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="6.5" y="4" width="11" height="5" rx="1.6" fill="currentColor" opacity=".14"/>
+                                <rect x="5" y="9" width="14" height="8" rx="2.2" fill="currentColor" opacity=".10"/>
+                                <path d="M7 17v3h10v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                                <path d="M7 8V4h10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                                <circle cx="16.6" cy="12.2" r="1.1" fill="currentColor" opacity=".35"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Автоматическая печать</h3>
+                        <p class="feature-tile__text">Этикетки, накладные, акты — без ручной работы</p>
+                    </article>
+                    <article class="feature-tile feature-tile--portal" data-animate data-delay="180">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="4" y="5" width="16" height="10.8" rx="2.2" fill="currentColor" opacity=".12"/>
+                                <path d="M9 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                                <path d="M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                                <circle cx="12" cy="10" r="2.1" fill="currentColor" opacity=".3"/>
+                                <path d="M9.3 14c.7-1.5 1.7-2.2 2.7-2.2s2 .7 2.7 2.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Личный кабинет клиента</h3>
+                        <p class="feature-tile__text">Для клиентов фулфилмента (селлеров)</p>
+                    </article>
+
+                    <article class="feature-tile feature-tile--marketplaces" data-animate>
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3 4.7 7v10L12 21.1l7.3-4.1V7L12 3z" fill="currentColor" opacity=".12"/>
+                                <path d="M12 3v8.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                                <path d="M6.6 9.1 12 12.1l5.4-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+                                <path d="M8.2 16.2h7.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">FBS/FBO</h3>
+                        <p class="feature-tile__text">Работа с маркетплейсами без ограничений</p>
+                    </article>
+                    <article class="feature-tile feature-tile--import" data-animate data-delay="60">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="6" y="13" width="12" height="4" rx="2" fill="currentColor" opacity=".12"/>
+                                <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                                <path d="M8.2 6.8 12 3l3.8 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                                <path d="M6 16.5v2a2.5 2.5 0 0 0 2.5 2.5h7A2.5 2.5 0 0 0 18 18.5v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-tile__title">Загрузка карточек товаров</h3>
+                        <p class="feature-tile__text">Вместо ручного создания — быстрый импорт</p>
+                    </article>
+                    <article class="feature-tile feature-tile--analytics feature-tile--soon" data-animate data-delay="120">
+                        <div class="feature-tile__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+                                <rect x="7" y="12" width="2.2" height="7" rx="1.1" fill="currentColor" opacity=".28"/>
+                                <rect x="11" y="9" width="2.2" height="10" rx="1.1" fill="currentColor" opacity=".22"/>
+                                <rect x="15" y="6" width="2.2" height="13" rx="1.1" fill="currentColor" opacity=".18"/>
+                                <path d="M7 11.8l4-2.7 4 2.1 4-5.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                            </svg>
+                        </div>
+                        <span class="feature-tile__tag">В разработке</span>
+                        <h3 class="feature-tile__title">Аналитика</h3>
+                        <p class="feature-tile__text">В разработке — скоро будет доступна</p>
+                    </article>
+                </div>
+
+                <p class="base-footnote" data-animate>* ТСД/Сканер не входит в базовый функционал — приобретается отдельно</p>
+            </div>
+
+            <!-- Вау-возможности -->
+            <div class="container-wide wow" id="wow">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Вау-возможности</span>
+                    <h2 class="h2" data-animate>Функционал, который выделяет нас</h2>
+                    <p class="lead" data-animate>Уникальные возможности для эффективной работы фулфилмента</p>
+                </div>
+
+                <div class="wow__grid" data-carousel="wow">
+                    <div class="wow__left">
+                        <div class="wow-card">
+                            <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev aria-label="Назад">
+                                <span aria-hidden="true">‹</span>
+                            </button>
+                            <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next aria-label="Вперёд">
+                                <span aria-hidden="true">›</span>
+                            </button>
+
+                            <div class="carousel__viewport">
+                                <div class="carousel__slide is-active" data-carousel-slide>
+                                    <div class="wow-card__icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4A2 2 0 0 0 13 22l7-4a2 2 0 0 0 1-1.73z"/></svg>
+                                    </div>
+                                    <h3 class="wow-card__title">Комплекты / FBS</h3>
+                                    <p class="wow-card__text">Система автоматически списывает несколько товаров в одном заказе и показывает сборщику, что именно положить в упаковку</p>
+                                </div>
+
+                                <div class="carousel__slide" data-carousel-slide>
+                                    <div class="wow-card__icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v6H3z"/><path d="M7 21V9"/><path d="M17 21V9"/></svg>
+                                    </div>
+                                    <h3 class="wow-card__title">Разбивка заказов FBS</h3>
+                                    <p class="wow-card__text">Автоматическая разбивка и группировка заказов FBS для оптимальной сборки и отгрузки</p>
+                                </div>
+
+                                <div class="carousel__slide" data-carousel-slide>
+                                    <div class="wow-card__icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/></svg>
+                                    </div>
+                                    <h3 class="wow-card__title">Автоматизированный FBO для OZON</h3>
+                                    <p class="wow-card__text">Полная автоматизация работы с FBO заказами OZON — от приёмки до отгрузки на склад маркетплейса</p>
+                                </div>
+
+                                <div class="carousel__slide" data-carousel-slide>
+                                    <div class="wow-card__icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M2 12h20"/><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg>
+                                    </div>
+                                    <h3 class="wow-card__title">Интеграция по API для FBO Wildberries</h3>
+                                    <p class="wow-card__text">Работа с FBO Wildberries через API — автоматическая синхронизация остатков и заказов</p>
+                                </div>
+
+                                <div class="carousel__slide" data-carousel-slide>
+                                    <div class="wow-card__icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M3 12h18"/><path d="M5 7h14"/><path d="M5 17h14"/></svg>
+                                    </div>
+                                    <h3 class="wow-card__title">Гибкие настройки</h3>
+                                    <p class="wow-card__text">Индивидуальные настройки бизнес-процессов под каждого клиента фулфилмента без доработок кода</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel__dots" aria-hidden="true" data-carousel-dots>
+                                <span class="dot is-active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wow__right">
+                        <div class="wow-mockup" data-animate>
+                            <div class="order-card">
+                                <div class="order-card__head">
+                                    <span class="order-card__title">Заказ FBS-284719</span>
+                                    <span class="order-card__status">В сборке</span>
+                                </div>
+                                <div class="order-card__kit">
+                                    <div class="order-card__kit-row">
+                                        <span class="order-card__kit-title">Комплект: Подарочный набор</span>
+                                        <span class="order-card__chip">Виртуальный комплект • 3 товара</span>
+                                    </div>
+                                </div>
+                                <div class="order-card__body">
+                                    <div class="order-card__label">Положить в коробку:</div>
+                                    <div class="order-item">
+                                        <span class="order-item__icon order-item__icon--cream" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 4h6v2H9V4z" fill="currentColor" opacity=".55"/>
+                                                <path d="M8 6h8l1 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L8 6z" fill="currentColor" opacity=".14"/>
+                                                <path d="M8.6 10h6.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+                                                <path d="M10 14h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+                                            </svg>
+                                        </span>
+                                        <div class="order-item__meta">
+                                            <div class="order-item__name">Крем для рук "Роза"</div>
+                                            <div class="order-item__sub">A-12-3 • SKU: CR-001</div>
+                                        </div>
+                                        <span class="order-item__check" aria-hidden="true">✓</span>
+                                    </div>
+                                    <div class="order-item">
+                                        <span class="order-item__icon order-item__icon--oil" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none">
+                                                <path d="M10 3h4v3h-4V3z" fill="currentColor" opacity=".55"/>
+                                                <path d="M9 6h6v2H9V6z" fill="currentColor" opacity=".3"/>
+                                                <path d="M8.5 8h7l.7 11.2A2.5 2.5 0 0 1 13.7 22h-3.4a2.5 2.5 0 0 1-2.5-2.8L8.5 8z" fill="currentColor" opacity=".14"/>
+                                                <path d="M10.2 12.2c1.2-.8 2.4-.8 3.6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+                                            </svg>
+                                        </span>
+                                        <div class="order-item__meta">
+                                            <div class="order-item__name">Масло для тела</div>
+                                            <div class="order-item__sub">B-05-1 • SKU: OL-002</div>
+                                        </div>
+                                        <span class="order-item__check" aria-hidden="true">✓</span>
+                                    </div>
+                                    <div class="order-item order-item--scan">
+                                        <span class="order-item__icon order-item__icon--box" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none">
+                                                <path d="M12 3 4.5 7v10L12 21l7.5-4V7L12 3z" fill="currentColor" opacity=".12"/>
+                                                <path d="M12 3 4.5 7 12 11.2 19.5 7 12 3z" fill="currentColor" opacity=".22"/>
+                                                <path d="M12 11.2V21" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+                                                <path d="M4.5 7v10L12 21l7.5-4V7" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+                                            </svg>
+                                        </span>
+                                        <div class="order-item__meta">
+                                            <div class="order-item__name">Подарочная коробка</div>
+                                            <div class="order-item__sub">C-01-2 • SKU: BX-003</div>
+                                        </div>
+                                        <span class="order-item__scan">Сканируйте</span>
+                                    </div>
+
+                                    <div class="order-progress">
+                                        <div class="order-progress__row">
+                                            <span>Прогресс сборки</span>
+                                            <strong>2/3</strong>
+                                        </div>
+                                        <div class="order-progress__bar"><span style="width:66%"></span></div>
+                                    </div>
+
+                                    <div class="fbs-meter" data-fbs-meter style="--fill:0">
+                                        <div class="fbs-meter__row">
+                                            <span class="fbs-meter__label">FBS</span>
+                                            <strong class="fbs-meter__value">до 3000/час</strong>
+                                        </div>
+                                        <div class="fbs-meter__bar" aria-hidden="true"><span></span></div>
+                                        <div class="fbs-meter__hint">Нагрузка растёт — система держит темп</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kits" data-animate data-delay="120">
+                            <div class="kits__card">
+                                <h3 class="kits__title">Как работают комплекты</h3>
+                                <ol class="kits__steps">
+                                    <li><span class="kits__num">1</span> Заказ поступает в систему (например, набор "Подарочный")</li>
+                                    <li><span class="kits__num">2</span> Система автоматически разбивает на составляющие: Товар А + Товар Б + Товар В</li>
+                                    <li><span class="kits__num">3</span> Сборщик видит точный список что положить, сканирует — готово</li>
+                                </ol>
+                            </div>
+                            <a href="#contact" class="btn-primary btn-large">Показать на моём примере →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ВНЕДРЕНИЕ (из скелета) — Как мы работаем
+             ======================================== -->
+        <section class="section section--implementation" id="implementation">
+            <div class="container">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Внедрение</span>
+                    <h2 class="h2" data-animate>Как мы работаем</h2>
+                    <p class="lead" data-animate>Путь клиента от заявки до результата</p>
+                </div>
+
+                <div class="impl-story" data-story data-steps="5">
+                    <div class="story__container">
+                        <div class="story__sticky">
+                            <div class="container-wide">
+                                <div class="story__grid">
+                                    <ul class="story__steps" aria-label="Этапы внедрения">
+                                        <li class="story-step is-active" data-animate>
+                                            <div class="story-step__kicker">01 • Заявка</div>
+                                            <div class="story-step__title">Стартуем от ваших процессов</div>
+                                            <div class="story-step__text">Вы оставляете заявку — мы уточняем объёмы, каналы (FBS/FBO), маркировку и текущие боли.</div>
+                                        </li>
+                                        <li class="story-step" data-animate data-delay="60">
+                                            <div class="story-step__kicker">02 • Презентация</div>
+                                            <div class="story-step__title">Показываем “как будет у вас”</div>
+                                            <div class="story-step__text">На примере ваших сценариев: приёмка, хранение, сборка, отгрузка, документы.</div>
+                                        </li>
+                                        <li class="story-step" data-animate data-delay="120">
+                                            <div class="story-step__kicker">03 • Тест</div>
+                                            <div class="story-step__title">2 недели — бесплатно</div>
+                                            <div class="story-step__text">Запускаем пилот: вы видите систему в работе до оплаты и принимаете решение на фактах.</div>
+                                        </li>
+                                        <li class="story-step" data-animate data-delay="180">
+                                            <div class="story-step__kicker">04 • Внедрение</div>
+                                            <div class="story-step__title">Настройка + обучение команды</div>
+                                            <div class="story-step__text">Подключаем интеграции, переносим данные, обучаем роли. Выйдем на стабильный поток.</div>
+                                        </li>
+                                        <li class="story-step" data-animate data-delay="240">
+                                            <div class="story-step__kicker">05 • Поддержка</div>
+                                            <div class="story-step__title">Держим темп и развиваем</div>
+                                            <div class="story-step__text">Telegram‑чат, быстрые доработки и релизы. Система развивается вместе с партнёрами.</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="story__visual" aria-label="Визуал этапов">
+                                        <div class="story-panel is-active">
+                                            <div class="impl-panel">
+                                                <div class="impl-panel__top">
+                                                    <div class="impl-panel__icon impl-panel__icon--blue" aria-hidden="true">✦</div>
+                                                    <div>
+                                                        <div class="impl-panel__title">Заявка</div>
+                                                        <div class="impl-panel__sub">1–2 вопроса — и мы понимаем масштаб</div>
+                                                    </div>
+                                                </div>
+                                                <div class="impl-form" aria-hidden="true">
+                                                    <div class="impl-field"><span>Объём</span><strong>FBS/FBO</strong></div>
+                                                    <div class="impl-field"><span>Маркировка</span><strong>Честный знак</strong></div>
+                                                    <div class="impl-field"><span>Интеграции</span><strong>WB / Ozon / 1С</strong></div>
+                                                </div>
+                                                <div class="impl-panel__note">Ответим быстро и предложим план внедрения.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="story-panel">
+                                            <div class="impl-panel">
+                                                <div class="impl-panel__top">
+                                                    <div class="impl-panel__icon impl-panel__icon--violet" aria-hidden="true">▣</div>
+                                                    <div>
+                                                        <div class="impl-panel__title">Презентация</div>
+                                                        <div class="impl-panel__sub">На ваших процессах, не “в вакууме”</div>
+                                                    </div>
+                                                </div>
+                                                <div class="impl-preview" aria-hidden="true">
+                                                    <div class="impl-preview__bar"></div>
+                                                    <div class="impl-preview__row"><span>Приёмка</span><strong>видео + скан</strong></div>
+                                                    <div class="impl-preview__row"><span>Сборка</span><strong>комплекты</strong></div>
+                                                    <div class="impl-preview__row"><span>Отгрузка</span><strong>этикетки</strong></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="story-panel">
+                                            <div class="impl-panel">
+                                                <div class="impl-panel__top">
+                                                    <div class="impl-panel__icon impl-panel__icon--green" aria-hidden="true">14</div>
+                                                    <div>
+                                                        <div class="impl-panel__title">Тест 2 недели</div>
+                                                        <div class="impl-panel__sub">Включаем пилот и считаем результат</div>
+                                                    </div>
+                                                </div>
+                                                <div class="impl-meter" aria-hidden="true">
+                                                    <div class="impl-meter__row"><span>Скорость</span><strong>+35%</strong></div>
+                                                    <div class="impl-meter__bar"><span style="width:72%"></span></div>
+                                                </div>
+                                                <div class="impl-meter" aria-hidden="true">
+                                                    <div class="impl-meter__row"><span>Ошибки</span><strong>-60%</strong></div>
+                                                    <div class="impl-meter__bar"><span style="width:58%"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="story-panel">
+                                            <div class="impl-panel">
+                                                <div class="impl-panel__top">
+                                                    <div class="impl-panel__icon impl-panel__icon--orange" aria-hidden="true">✓</div>
+                                                    <div>
+                                                        <div class="impl-panel__title">Внедрение и обучение</div>
+                                                        <div class="impl-panel__sub">Переносим процессы в систему</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="impl-check" aria-hidden="true">
+                                                    <li>Настройка склада и адресации</li>
+                                                    <li>Интеграции и шаблоны документов</li>
+                                                    <li>Обучение ролей: менеджер / склад / логистика</li>
+                                                    <li>Запуск и контроль первых потоков</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="story-panel">
+                                            <div class="impl-panel">
+                                                <div class="impl-panel__top">
+                                                    <div class="impl-panel__icon impl-panel__icon--dark" aria-hidden="true">💬</div>
+                                                    <div>
+                                                        <div class="impl-panel__title">Поддержка и развитие</div>
+                                                        <div class="impl-panel__sub">Не “заявка в очередь”, а работа в моменте</div>
+                                                    </div>
+                                                </div>
+                                                <div class="impl-chat" aria-hidden="true">
+                                                    <div class="impl-bubble impl-bubble--out">Нужно поправить этикетку</div>
+                                                    <div class="impl-bubble impl-bubble--in">Сделаем. Отпишемся.</div>
+                                                    <div class="impl-bubble impl-bubble--in">Готово ✅</div>
+                                                </div>
+                                                <div class="impl-panel__note">Доработки — от 30 минут. Критичное — до 1 часа.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story__progress" aria-hidden="true"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="center-cta" data-animate>
+                    <a href="#contact" class="btn-primary btn-large">Запросить презентацию →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             КЕЙСЫ — НАМ ДОВЕРЯЮТ
+             ======================================== -->
+        <section class="trust" id="cases">
+            <!-- Декоративный фон -->
+            <div class="trust__bg">
+                <div class="trust__bg-gradient"></div>
+                <div class="trust__bg-pattern"></div>
+            </div>
+            
+            <div class="container-wide">
+                <div class="trust__header">
+                    <span class="trust__badge">Кейсы</span>
+                    <h2 class="heading-2 trust__title">Нам доверяют фулфилменты по всей России</h2>
+                    <p class="body-large trust__subtitle">На Целиком работают фулфилменты, которые:</p>
+                    <ul class="trust__bullets">
+                        <li>сократили количество ошибок на складе</li>
+                        <li>ускорили обработку заказов</li>
+                        <li>навели порядок в процессах и документах</li>
+                        <li>перестали «тушить пожары» вручную</li>
+                    </ul>
+                </div>
+                
+                <!-- Логотипы партнёров -->
+                <div class="trust__partners">
+                    <div class="trust__partners-track">
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <img class="trust__partner-img trust__partner-img--light" src="assets/images/partners/fulfil.pro_black.png" alt="fulfil.pro">
+                                <img class="trust__partner-img trust__partner-img--dark" src="assets/images/partners/fulfil.pro_white.png" alt="fulfil.pro">
+                            </div>
+                            <span class="trust__partner-name">fulfil.pro</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <img class="trust__partner-img" src="assets/images/partners/InShot_20241230_171409286.png" alt="Geniepack">
+                            </div>
+                            <span class="trust__partner-name">Geniepack</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                    <rect x="6" y="6" width="48" height="48" rx="12" fill="#22c55e"/>
+                                    <text x="30" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="white">T</text>
+                                </svg>
+                            </div>
+                            <span class="trust__partner-name">TrustBox</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <img class="trust__partner-img" src="assets/images/partners/logo_FFUral.png" alt="Фулфилмент Урал">
+                            </div>
+                            <span class="trust__partner-name">Урал</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                    <rect x="6" y="6" width="48" height="48" rx="12" fill="#ec4899"/>
+                                    <text x="30" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="white">F</text>
+                                </svg>
+                            </div>
+                            <span class="trust__partner-name">FFDVS</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                    <rect x="6" y="6" width="48" height="48" rx="12" fill="#06b6d4"/>
+                                    <text x="30" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="white">U</text>
+                                </svg>
+                            </div>
+                            <span class="trust__partner-name">Unomas</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                    <rect x="6" y="6" width="48" height="48" rx="12" fill="#6366f1"/>
+                                    <text x="30" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="white">V</text>
+                                </svg>
+                            </div>
+                            <span class="trust__partner-name">Vottak</span>
+                        </div>
+                        <div class="trust__partner">
+                            <div class="trust__partner-logo">
+                                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                    <rect x="6" y="6" width="48" height="48" rx="12" fill="#ef4444"/>
+                                    <text x="30" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="white">П</text>
+                                </svg>
+                            </div>
+                            <span class="trust__partner-name">Первый</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase: результаты и “как выглядит внедрение” -->
+                <div class="cases-showcase">
+                    <div class="cases-showcase__grid">
+                        <div class="cases-showcase__copy" data-animate>
+                            <span class="cases-showcase__kicker">Результаты</span>
+                            <h3 class="cases-showcase__title">Что меняется уже через 2–6 недель после внедрения</h3>
+                            <p class="cases-showcase__lead">Мы не обещаем “магии”. Мы наводим порядок в данных и процессах — поэтому метрики начинают расти.</p>
+
+                            <div class="cases-metrics">
+                                <div class="cases-metric cases-metric--green">
+                                    <div class="cases-metric__value">−80%</div>
+                                    <div class="cases-metric__label">ошибок и пересортов</div>
+                                    <div class="cases-metric__sub">меньше компенсаций и “ручных разборов”</div>
+                                </div>
+                                <div class="cases-metric cases-metric--violet">
+                                    <div class="cases-metric__value">×1.5</div>
+                                    <div class="cases-metric__label">скорость обработки</div>
+                                    <div class="cases-metric__sub">больше заказов без расширения склада</div>
+                                </div>
+                                <div class="cases-metric cases-metric--blue">
+                                    <div class="cases-metric__value">5 мин</div>
+                                    <div class="cases-metric__label">ответ поддержки</div>
+                                    <div class="cases-metric__sub">критичное — решаем сразу</div>
+                                </div>
+                            </div>
+
+                            <div class="cases-showcase__cta">
+                                <a href="#contact" class="btn-primary btn-large">Хочу расчёт под мой склад →</a>
+                                <div class="cases-showcase__note">Считаем экономику на ваших текущих цифрах. Без “средних по больнице”.</div>
+                            </div>
+                        </div>
+
+                        <div class="cases-showcase__visual" data-animate data-delay="120" aria-label="Визуал результата">
+                            <div class="cases-visual-card">
+                                <div class="cases-visual-card__head">
+                                    <div class="cases-visual-card__title">До / После</div>
+                                    <div class="cases-visual-card__pill">6 месяцев</div>
+                                </div>
+
+                                <div class="cases-bars" aria-hidden="true">
+                                    <div class="cases-bar">
+                                        <div class="cases-bar__label">Ошибки</div>
+                                        <div class="cases-bar__track"><span style="--w:82%"></span></div>
+                                        <div class="cases-bar__meta">15% → 3%</div>
+                                    </div>
+                                    <div class="cases-bar">
+                                        <div class="cases-bar__label">Штат</div>
+                                        <div class="cases-bar__track"><span style="--w:30%"></span></div>
+                                        <div class="cases-bar__meta">10 → 7</div>
+                                    </div>
+                                    <div class="cases-bar">
+                                        <div class="cases-bar__label">Сборка</div>
+                                        <div class="cases-bar__track"><span style="--w:52%"></span></div>
+                                        <div class="cases-bar__meta">8 мин → 4 мин</div>
+                                    </div>
+                                </div>
+
+                                <div class="cases-logos" aria-label="Контур кейса">
+                                    <span class="cases-logos__chip">FBS</span>
+                                    <span class="cases-logos__chip">WB</span>
+                                    <span class="cases-logos__chip">Ozon</span>
+                                    <span class="cases-logos__chip">Я.Маркет</span>
+                                    <span class="cases-logos__chip">1С</span>
+                                    <span class="cases-logos__chip">ЧЗ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Цитаты -->
+                <div class="trust__testimonials">
+                    <article class="case-poem" data-animate>
+                        <div class="case-poem__head">
+                            <span class="case-poem__kicker">Стихи от клиента ❤️</span>
+                            <span class="case-poem__meta">Фулфилмент Vottak</span>
+                        </div>
+                        <pre class="case-poem__text">Написав Вам пару писем,
+Не могла предполагать,
+Что складская жизнь шальная
+Может красками играть!
+
+Тем, кто нам ее раскрасил —
+Наш сердечнейший поклон!
+Щас возвраты принимаем,
+Как в деревне самогон!
+
+Чётко, слаженно, понятно
+Всё работает сейчас.
+Иногда от счастья плачу,
+Очень радостно за нас))</pre>
+                    </article>
+
+                    <article class="case-quote" data-animate data-delay="60">
+                        <p class="case-quote__text">"Я в шоке! Мы счастливы как слоны!!!"</p>
+                        <div class="case-quote__meta">Фулфилмент Flobas</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="90">
+                        <p class="case-quote__text">"Боже, Храни Целиком!"</p>
+                        <div class="case-quote__meta">Фулфилмент Geniepack</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="120">
+                        <p class="case-quote__text">"Каковаааа красота, это же кайфы!!!!! Круто, что вы есть!"</p>
+                        <div class="case-quote__meta">Фулфилмент FFDVS</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="150">
+                        <p class="case-quote__text">"Благодарю за ускорение нашей работы)"</p>
+                        <div class="case-quote__meta">Фулфилмент Unomas</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="180">
+                        <p class="case-quote__text">"Вы лучшие!)"</p>
+                        <div class="case-quote__meta">Фулфилмент Unomas</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="210">
+                        <p class="case-quote__text">"Опишите одним словом систему Целиком? — Отлично!"</p>
+                        <div class="case-quote__meta">Фулфилмент Первый</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="240">
+                        <p class="case-quote__text">"Упорно ищу минусы, но пока не нашла ;("</p>
+                        <div class="case-quote__meta">Фулфилмент Flobas</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="270">
+                        <p class="case-quote__text">"Не верьте Целиком — они нагло врут!!! Говорят, что сделают на неделе, а готово через час!"</p>
+                        <div class="case-quote__meta">⭐ Фулфилмент Geniepack</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="300">
+                        <p class="case-quote__text">"Внушает душевное спокойствие"</p>
+                        <div class="case-quote__meta">Фулфилмент TrustBox</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="330">
+                        <p class="case-quote__text">"FBS в Целиком — это просто чудеса какие-то!"</p>
+                        <div class="case-quote__meta">Фулфилмент Урал</div>
+                    </article>
+                    <article class="case-quote" data-animate data-delay="360">
+                        <p class="case-quote__text">"Я хотел уже закрывать фулфилмент, а потом появился Целиком, я боюсь вспоминать как было до…"</p>
+                        <div class="case-quote__meta">⭐ Максим Гашков, Фулфилмент Урал</div>
+                    </article>
+                </div>
+                
+                <div class="trust__cta">
+                    <a href="#contact" class="btn-primary btn-large">Хочу так же →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ЭКРАН 3 — СКОРОСТЬ И ПОДДЕРЖКА
+             ======================================== -->
+        <section class="support-section" id="support">
+            <div class="support-header">
+                <div class="container">
+                    <span class="section-label" data-animate>Скорость и поддержка</span>
+                    <h2 class="section-title-xl" data-animate>
+                        Поддержка, которая действительно <span class="text-gradient">работает быстро</span>
+                    </h2>
+                    <p class="lead" data-animate>Мы понимаем, что склад не может “подождать до завтра”.</p>
+                </div>
+            </div>
+            
+            <div class="support-metrics">
+                <div class="container">
+                    <div class="metrics-row">
+                        <div class="metric-card" data-animate>
+                            <div class="metric-number">5</div>
+                            <div class="metric-unit">минут</div>
+                            <div class="metric-label">Средняя скорость устранения ошибки</div>
+                        </div>
+                        <div class="metric-card" data-animate>
+                            <div class="metric-number">от 30</div>
+                            <div class="metric-unit">минут</div>
+                            <div class="metric-label">доработки по системе</div>
+                        </div>
+                        <div class="metric-card metric-card--accent" data-animate>
+                            <div class="metric-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 9v4"/>
+                                    <path d="M12 17h.01"/>
+                                    <path d="M10.3 4.3 4.3 10.3a2 2 0 0 0 0 2.8l6 6a2 2 0 0 0 2.8 0l6-6a2 2 0 0 0 0-2.8l-6-6a2 2 0 0 0-2.8 0z"/>
+                                </svg>
+                            </div>
+                            <div class="metric-number">до 1</div>
+                            <div class="metric-unit">часа</div>
+                            <div class="metric-label">критические проблемы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="support-chat-section">
+                <div class="container">
+                    <div class="chat-grid">
+                        <div class="chat-info">
+                            <h3 class="chat-title" data-animate>“Починим завтра” — не про нас</h3>
+                            <p class="chat-desc" data-animate>
+                                «Когда вам говорят: “починим завтра” — не верьте. У Целиком всё готово через 5 минут». — Юлия Караулова, Флобас
+                            </p>
+                            
+                            <div class="timeline" aria-label="Таймлайн решения">
+                                <div class="timeline-line"></div>
+                                <div class="timeline-item" data-step="1">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-time">14:23</span>
+                                        <span class="timeline-text">Клиент сообщает о проблеме</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" data-step="2">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-time">14:24</span>
+                                        <span class="timeline-text">Поддержка берёт в работу</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" data-step="3">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-time">14:26</span>
+                                        <span class="timeline-text">Проблема найдена и исправлена</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" data-step="4">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-time">14:27</span>
+                                        <span class="timeline-text">Клиент подтверждает</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item timeline-item--success" data-step="5">
+                                    <div class="timeline-dot timeline-dot--success"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-badge">✓ Решено за 4 минуты</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#contact" class="btn-primary btn-large" data-animate>Посмотреть, как это будет работать на моём складе</a>
+                        </div>
+                        <div class="chat-visual">
+                            <div class="telegram-window">
+                                <div class="telegram-header">
+                                    <div class="telegram-avatar">
+                                        <svg viewBox="0 0 100 100" fill="currentColor">
+                                            <rect x="15" y="10" width="10" height="40" rx="2"/>
+                                            <rect x="30" y="10" width="10" height="40" rx="2"/>
+                                            <rect x="45" y="10" width="10" height="32" rx="2"/>
+                                            <path d="M20 50 Q20 62 35 62 Q50 62 50 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="telegram-info">
+                                        <div class="telegram-name">Техподдержка Целиком</div>
+                                        <div class="telegram-status">
+                                            <span class="status-typing">печатает...</span>
+                                            <span class="status-online">онлайн</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="telegram-body">
+                                    <div class="telegram-date">Сегодня</div>
+                                    
+                                    <div class="msg msg--out" data-msg="1">
+                                        <div class="msg-bubble">
+                                            <p>Добрый день! Не печатаются этикетки на FBS 😕</p>
+                                            <span class="msg-time">14:23 ✓✓</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="msg msg--in" data-msg="2">
+                                        <div class="msg-bubble">
+                                            <p>Здравствуйте! 👋 Уже смотрим</p>
+                                            <span class="msg-time">14:24</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="msg msg--in" data-msg="3">
+                                        <div class="msg-bubble">
+                                            <p>Нашли — сбой в API маркетплейса. Исправили ✅</p>
+                                            <span class="msg-time">14:26</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="msg msg--out" data-msg="4">
+                                        <div class="msg-bubble">
+                                            <p>Работает! Спасибо 🔥🔥🔥</p>
+                                            <span class="msg-time">14:27 ✓✓</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="msg-resolved" data-msg="5">
+                                        <span>✓ Проблема решена за 4 минуты</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ЭКРАН 4 — ЧЕМ ЦЕЛИКОМ ЛУЧШЕ
+             ======================================== -->
+        <section class="section section--better" id="better">
+            <div class="container">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Почему Целиком</span>
+                    <h2 class="h2" data-animate>Почему фулфилменты выбирают Целиком</h2>
+                    <p class="lead" data-animate>Открытость, темп и человечный подход — коротко о главном.</p>
+                </div>
+            </div>
+
+            <div class="container-wide">
+                <div class="better-story" data-story data-steps="3">
+                    <div class="story__container">
+                        <div class="story__sticky">
+                            <div class="story__grid">
+                                <ul class="story__steps" aria-label="Почему выбирают Целиком">
+                                    <li class="story-step is-active">
+                                        <div class="story-step__kicker">01</div>
+                                        <div class="story-step__title">Функциональность</div>
+                                        <div class="story-step__text">Закрываем реальные складские задачи на практике — не “по учебнику”.</div>
+                                    </li>
+                                    <li class="story-step">
+                                        <div class="story-step__kicker">02</div>
+                                        <div class="story-step__title">Темп развития</div>
+                                        <div class="story-step__text">Релизы и улучшения идут постоянно — вы получаете новые фичи без боли.</div>
+                                    </li>
+                                    <li class="story-step">
+                                        <div class="story-step__kicker">03</div>
+                                        <div class="story-step__title">Человечный подход</div>
+                                        <div class="story-step__text">Спокойная коммуникация и быстрый Telegram-чат. Берём и решаем.</div>
+                                    </li>
+                                </ul>
+
+                                <div class="story__visual" aria-label="Визуал преимуществ">
+                                    <div class="story-panel is-active">
+                                        <div class="better-panel better-panel--system">
+                                            <div class="better-panel__head">
+                                                <div class="better-panel__icon better-panel__icon--ink" aria-hidden="true">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="better-panel__title">Склад работает как система</div>
+                                                    <div class="better-panel__sub">Документы, маркировка, FBS/FBO — в одном потоке.</div>
+                                                </div>
+                                            </div>
+                                            <div class="better-panel__grid" aria-hidden="true">
+                                                <div class="better-chip">Адресация • 4 уровня</div>
+                                                <div class="better-chip">Автопечать этикеток</div>
+                                                <div class="better-chip">Честный знак</div>
+                                                <div class="better-chip">Видео операций</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="story-panel">
+                                        <div class="better-panel better-panel--release">
+                                            <div class="better-panel__head">
+                                                <div class="better-panel__icon better-panel__icon--violet" aria-hidden="true">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M3 4v6h6"/>
+                                                        <path d="M21 20v-6h-6"/>
+                                                        <path d="M21 12a9 9 0 0 0-15.5-6.3"/>
+                                                        <path d="M3 12a9 9 0 0 0 15.5 6.3"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="better-panel__title">Развитие без пауз</div>
+                                                    <div class="better-panel__sub">Запрос → релиз → обновление. И так постоянно.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="better-release" aria-hidden="true">
+                                                <div class="better-release__feed">
+                                                    <div class="better-release__item">
+                                                        <div class="better-release__tag">v2.4.1</div>
+                                                        <div class="better-release__name">Автопечать: шаблоны этикеток</div>
+                                                        <div class="better-release__meta">без остановки склада</div>
+                                                    </div>
+                                                    <div class="better-release__item">
+                                                        <div class="better-release__tag">v2.4.0</div>
+                                                        <div class="better-release__name">FBS: ускорение сборки</div>
+                                                        <div class="better-release__meta">меньше кликов → больше скорости</div>
+                                                    </div>
+                                                    <div class="better-release__item">
+                                                        <div class="better-release__tag">v2.3.8</div>
+                                                        <div class="better-release__name">Маркировка: контроль остатков</div>
+                                                        <div class="better-release__meta">ошибки → вниз</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="better-release__rail">
+                                                    <div class="better-rail">
+                                                        <div class="better-rail__node is-done">Запрос</div>
+                                                        <div class="better-rail__node is-done">План</div>
+                                                        <div class="better-rail__node is-active">Релиз</div>
+                                                        <div class="better-rail__node">Обновление</div>
+                                                    </div>
+                                                    <div class="better-mini-bars">
+                                                        <div class="better-mini-bar" style="--v: .72"><span></span><em>Интеграции</em></div>
+                                                        <div class="better-mini-bar" style="--v: .84"><span></span><em>Сборка</em></div>
+                                                        <div class="better-mini-bar" style="--v: .63"><span></span><em>Документы</em></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="story-panel">
+                                        <div class="better-panel better-panel--support">
+                                            <div class="better-panel__head">
+                                                <div class="better-panel__icon better-panel__icon--green" aria-hidden="true">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M21 12a7 7 0 0 1-7 7H8l-4 3V6a7 7 0 0 1 7-7h3a7 7 0 0 1 7 7z"/>
+                                                        <path d="M8.6 10.3h6.8"/>
+                                                        <path d="M8.6 13.7h4.2"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <div class="better-panel__title">Поддержка, которая рядом</div>
+                                                    <div class="better-panel__sub">Спокойно, по делу, и в одном чате — без кругов согласований.</div>
+                                                </div>
+                                            </div>
+                                            <div class="better-chat" aria-hidden="true">
+                                                <div class="better-bubble better-bubble--out">Не печатаются этикетки на FBS</div>
+                                                <div class="better-bubble better-bubble--in">Уже смотрим</div>
+                                                <div class="better-bubble better-bubble--in">Исправили ✅</div>
+                                                <div class="better-bubble better-bubble--out">Спасибо!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story__progress" aria-hidden="true"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="center-cta" data-animate>
+                    <a href="#contact" class="btn-primary btn-large">Узнать, как Целиком решит мои задачи</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- (Убрали) старые секции learn-more/features: их заменяет блок #functionality выше -->
+
+        <!-- ========================================
+             ЭКРАН 4 — ТАРИФЫ (таблица с “пересборкой”)
+             ======================================== -->
+        <section class="section section--pricing" id="pricing">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="h2" data-animate>Тарифы</h2>
+                    <p class="lead" data-animate>Получить бесплатное тестирование системы (2 недели)</p>
+                </div>
+            </div>
+
+            <div class="pricing-story" data-pricing-story data-stages="2">
+                <div class="pricing-story__container">
+                    <div class="pricing-story__sticky">
+                        <div class="container-wide">
+                            <div class="pricing-stage pricing-stage--0 is-active" data-stage="0">
+                                <div class="plans">
+                                    <article class="plan plan--soft">
+                                        <h3 class="plan__title">Старт</h3>
+                                        <p class="plan__desc">Для небольших фулфилментов</p>
+                                        <p class="plan__price"><strong>40 000</strong> ₽/мес</p>
+                                        <ul class="plan__list">
+                                            <li>Базовый функционал WMS</li>
+                                            <li>До 3 пользователей</li>
+                                            <li>Email поддержка</li>
+                                            <li>Базовые интеграции</li>
+                                        </ul>
+                                        <a href="#contact" class="btn-secondary plan__cta" data-plan-pick data-plan="Старт" data-plan-price="40000">Выбрать</a>
+                                    </article>
+                                    <article class="plan plan--featured">
+                                        <div class="plan__badge">Рекомендуем</div>
+                                        <h3 class="plan__title">Оптимальный</h3>
+                                        <p class="plan__desc">Рекомендуемый тариф</p>
+                                        <p class="plan__price"><strong>85 000</strong> ₽/мес</p>
+                                        <ul class="plan__list">
+                                            <li>Полный функционал WMS</li>
+                                            <li>До 10 пользователей</li>
+                                            <li>Приоритетная поддержка</li>
+                                            <li>Все интеграции</li>
+                                            <li>Кабинет селлера</li>
+                                            <li>Видеозапись операций</li>
+                                        </ul>
+                                        <a href="#contact" class="btn-primary plan__cta" data-plan-pick data-plan="Оптимальный" data-plan-price="85000">Выбрать</a>
+                                    </article>
+                                    <article class="plan plan--soft">
+                                        <h3 class="plan__title">Максимальный</h3>
+                                        <p class="plan__desc">Максимальная автоматизация и поддержка</p>
+                                        <p class="plan__price"><strong>125 000</strong> ₽/мес</p>
+                                        <ul class="plan__list">
+                                            <li>Всё из Оптимального</li>
+                                            <li>Безлимит пользователей</li>
+                                            <li>Персональный менеджер</li>
+                                            <li>Кастомные доработки</li>
+                                            <li>SLA гарантии</li>
+                                            <li>Обучение команды</li>
+                                        </ul>
+                                        <a href="#contact" class="btn-secondary plan__cta" data-plan-pick data-plan="Максимальный" data-plan-price="125000">Выбрать</a>
+                                    </article>
+                                </div>
+
+                                <div class="pricing-under" data-animate>
+                                    <a href="#contact" class="btn-primary btn-large">Узнать как закроет мои вопросы система Целиком →</a>
+                                    <p class="pricing-note">Получить бесплатное тестирование системы (2 недели)</p>
+                                </div>
+                            </div>
+
+                            <div class="pricing-stage pricing-stage--1" data-stage="1">
+                                <div class="roi">
+                                    <div class="roi__left">
+                                        <h3 class="roi__title">Дороже в моменте — выгоднее в долгосрочной перспективе</h3>
+                                        <p class="roi__lead">Мы не самые дешёвые, но мы окупаемся за счёт:</p>
+                                        <ul class="roi__list">
+                                            <li>Меньше ошибок — меньше компенсаций</li>
+                                            <li>Меньше людей — меньше ФОТ</li>
+                                            <li>Быстрее обработка — больше заказов</li>
+                                            <li>Прозрачность — контроль над бизнесом</li>
+                                        </ul>
+                                        <a href="#contact" class="btn-primary btn-large">Рассчитать экономику для моего склада →</a>
+                                    </div>
+
+                                    <div class="roi__right">
+                                        <div class="roi-card" data-roi>
+                                            <div class="roi-card__title">Типичный ROI за 6 месяцев</div>
+                                            <div class="roi-metric" data-roi-bar style="--bar:80%;">
+                                                <div class="roi-metric__head">
+                                                    <span class="roi-metric__name">Ошибки</span>
+                                                    <span class="roi-metric__delta">-80%</span>
+                                                </div>
+                                                <div class="roi-metric__sub">
+                                                    <span>Было: ~15%</span>
+                                                    <span>Стало: ~3%</span>
+                                                </div>
+                                                <div class="roi-metric__bar"><span></span></div>
+                                            </div>
+                                            <div class="roi-metric" data-roi-bar style="--bar:30%;">
+                                                <div class="roi-metric__head">
+                                                    <span class="roi-metric__name">Штат</span>
+                                                    <span class="roi-metric__delta">-30%</span>
+                                                </div>
+                                                <div class="roi-metric__sub">
+                                                    <span>Было: 10 чел</span>
+                                                    <span>Стало: 7 чел</span>
+                                                </div>
+                                                <div class="roi-metric__bar"><span></span></div>
+                                            </div>
+                                            <div class="roi-metric" data-roi-bar style="--bar:50%;">
+                                                <div class="roi-metric__head">
+                                                    <span class="roi-metric__name">Время сборки</span>
+                                                    <span class="roi-metric__delta">-50%</span>
+                                                </div>
+                                                <div class="roi-metric__sub">
+                                                    <span>Было: 8 мин</span>
+                                                    <span>Стало: 4 мин</span>
+                                                </div>
+                                                <div class="roi-metric__bar"><span></span></div>
+                                            </div>
+                                            <div class="roi-payback">
+                                                <span class="roi-payback__label">Окупаемость</span>
+                                                <span class="roi-payback__value">2-3 месяца</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="roi-tip">
+                                            <span class="roi-tip__label">Совет:</span>
+                                            <span>Попросите персональный расчёт на основе ваших текущих показателей</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="roi-cta" data-animate>
+                                    <div class="roi-cta__card">
+                                        <h3 class="h3">Запросите персональную презентацию</h3>
+                                        <p class="text">Покажем систему на примере ваших процессов и посчитаем экономику под ваш склад.</p>
+                                        <a href="#contact" class="btn-primary btn-large">Запросить презентацию</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pricing-story__progress" aria-hidden="true"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FAQ (из скелета)
+             ======================================== -->
+        <section class="section section--faq" id="faq">
+            <div class="container">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>Частые вопросы</span>
+                    <h2 class="h2" data-animate>Частые вопросы</h2>
+                    <p class="lead" data-animate>Ответы на вопросы, которые задают чаще всего</p>
+                </div>
+
+                <div class="faq-shell">
+                    <div class="faq-aside" data-animate>
+                        <div class="faq-aside__card">
+                            <div class="faq-aside__kicker">Быстрый ответ</div>
+                            <div class="faq-aside__title">Если коротко</div>
+                            <ul class="faq-aside__list">
+                                <li><strong>Внедрение:</strong> обычно 2–4 недели</li>
+                                <li><strong>Тест:</strong> 2 недели бесплатно</li>
+                                <li><strong>Поддержка:</strong> чат в Telegram, ответ ~5 минут</li>
+                                <li><strong>Интеграции:</strong> Ozon/WB/ЯМ/1С/ЧЗ</li>
+                            </ul>
+                            <a href="#contact" class="btn-primary btn-large">Запросить презентацию →</a>
+                        </div>
+                    </div>
+
+                    <div class="faq" aria-label="Частые вопросы">
+                        <details class="faq-item" data-animate>
+                            <summary class="faq-q">Сколько времени занимает внедрение?</summary>
+                            <div class="faq-a">
+                                <p>2–4 недели в зависимости от сложности процессов. Мы даём 2 недели бесплатного теста, чтобы вы оценили систему на практике до оплаты.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="60">
+                            <summary class="faq-q">Что нужно для начала работы?</summary>
+                            <div class="faq-a">
+                                <p>Минимум: список товаров, структура склада, доступы к маркетплейсам. Мы поможем всё подготовить и настроить.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="120">
+                            <summary class="faq-q">Как происходит обучение команды?</summary>
+                            <div class="faq-a">
+                                <p>Мы проводим онлайн-обучение для всех ролей. На полное освоение системы нужно 7 дней.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="180">
+                            <summary class="faq-q">Что если система не подойдёт?</summary>
+                            <div class="faq-a">
+                                <p>За 2 недели теста вы поймёте, подходит ли система. Если нет — расстаёмся без обязательств. Мы заинтересованы в долгосрочном партнёрстве.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="240">
+                            <summary class="faq-q">Чем вы отличаетесь от конкурентов?</summary>
+                            <div class="faq-a">
+                                <p>Мы не сравниваем себя с конкурентами, но вот что говорят о нас наши клиенты:</p>
+                                <p><a class="faq-link" href="#cases">Посмотреть отзывы клиентов</a></p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="300">
+                            <summary class="faq-q">Какие есть интеграции?</summary>
+                            <div class="faq-a">
+                                <p>Ozon, Wildberries, Яндекс Маркет, 1С, Честный знак. Постоянно добавляем новые по запросам партнёров.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="360">
+                            <summary class="faq-q">Как устроена поддержка?</summary>
+                            <div class="faq-a">
+                                <p>Чат в Telegram, ответ в среднем за 5 минут. Критичные проблемы решаем сразу. Доработки — от 2 до 24 часов.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item" data-animate data-delay="420">
+                            <summary class="faq-q">Почему дороже конкурентов?</summary>
+                            <div class="faq-a">
+                                <p>Потому что окупается: меньше ошибок, меньше людей, быстрее обработка. ROI обычно 2–3 месяца. Можем посчитать для вашего случая.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             О КОМПАНИИ (из скелета)
+             ======================================== -->
+        <section class="section section--about" id="about">
+            <div class="container">
+                <div class="section-head center">
+                    <span class="kicker" data-animate>О компании</span>
+                    <h2 class="h2" data-animate>О компании</h2>
+                    <p class="lead" data-animate>Целиком — не просто софт, это целая экосистема, которая помогает развиваться и расти вашему фулфилменту.</p>
+                </div>
+            </div>
+
+            <div class="container-wide about-carousel" data-carousel="about">
+                <div class="carousel about-carousel__inner">
+                    <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev aria-label="Назад">
+                        <span aria-hidden="true">‹</span>
+                    </button>
+                    <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next aria-label="Вперёд">
+                        <span aria-hidden="true">›</span>
+                    </button>
+
+                    <div class="carousel__viewport">
+                        <div class="carousel__slide is-active about-slide" data-carousel-slide>
+                            <div class="about-cards">
+                                <article class="about-card" data-animate>
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--violet" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Собрание «круглого стола» с партнёрами системы</h3>
+                                    <p class="about-card__text">Вместе планируем доработки и обсуждаем развитие системы на основе реальных потребностей</p>
+                                </article>
+
+                                <article class="about-card" data-animate data-delay="80">
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--pink" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 20l9-5-9-5-9 5 9 5z"/>
+                                            <path d="M3 10l9 5 9-5"/>
+                                            <path d="M12 5l9 5-9 5-9-5 9-5z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Команда профессионалов отрасли</h3>
+                                    <p class="about-card__text">Разработка, поддержка и развитие — команда, которая понимает фулфилмент изнутри</p>
+                                </article>
+
+                                <div class="about-visual about-visual--violet" aria-hidden="true">
+                                    <div class="about-visual__meta">
+                                        <div class="about-visual__kicker">Экосистема</div>
+                                        <div class="about-visual__title">Развиваемся вместе с партнёрами</div>
+                                        <div class="about-visual__sub">Круглый стол → план → релиз → обучение</div>
+                                    </div>
+                                    <div class="about-visual__rail">
+                                        <div class="about-rail">
+                                            <span class="about-rail__dot is-on"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__line"></span>
+                                        </div>
+                                        <div class="about-rail__labels">
+                                            <span>Круглый стол</span>
+                                            <span>Бэклог</span>
+                                            <span>Релиз</span>
+                                            <span>Обучение</span>
+                                        </div>
+                                    </div>
+                                    <div class="about-visual__chips">
+                                        <span class="about-pill">раз в месяц</span>
+                                        <span class="about-pill">реальные кейсы</span>
+                                        <span class="about-pill">без «шума»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide about-slide" data-carousel-slide>
+                            <div class="about-cards">
+                                <article class="about-card" data-animate>
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--orange" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8z"/>
+                                            <path d="M8 10h8"/>
+                                            <path d="M8 14h6"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Неформальные встречи бизнес-клуба «Целиком»</h3>
+                                    <p class="about-card__text">Нетворкинг и обмен опытом между фулфилментами в неформальной обстановке</p>
+                                </article>
+
+                                <article class="about-card" data-animate data-delay="80">
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--green" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M8 10h8"/>
+                                            <path d="M8 14h6"/>
+                                            <path d="M21 15a4 4 0 0 1-4 4H8l-4 3V7a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Ежемесячный онлайн-созвон «вопрос–ответ»</h3>
+                                    <p class="about-card__text">Открытый диалог с командой — задавайте вопросы и получайте ответы напрямую</p>
+                                </article>
+
+                                <div class="about-visual about-visual--green" aria-hidden="true">
+                                    <div class="about-visual__meta">
+                                        <div class="about-visual__kicker">Коммьюнити</div>
+                                        <div class="about-visual__title">Клуб партнёров «Целиком»</div>
+                                        <div class="about-visual__sub">Встречи → разбор кейсов → Q&amp;A → нетворкинг</div>
+                                    </div>
+                                    <div class="about-visual__rail">
+                                        <div class="about-rail">
+                                            <span class="about-rail__dot is-on"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__line"></span>
+                                        </div>
+                                        <div class="about-rail__labels">
+                                            <span>Встреча</span>
+                                            <span>Кейсы</span>
+                                            <span>Q&amp;A</span>
+                                            <span>Сеть</span>
+                                        </div>
+                                    </div>
+                                    <div class="about-visual__chips">
+                                        <span class="about-pill">живой опыт</span>
+                                        <span class="about-pill">обратная связь</span>
+                                        <span class="about-pill">свои люди</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide about-slide" data-carousel-slide>
+                            <div class="about-cards">
+                                <article class="about-card" data-animate>
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--blue" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="3"/>
+                                            <path d="M8 2v4M16 2v4"/>
+                                            <path d="M3 10h18"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Ежемесячные офлайн-встречи и обучение</h3>
+                                    <p class="about-card__text">Регулярно собираемся с партнёрами: обучение, новые фичи, разбор кейсов</p>
+                                </article>
+
+                                <article class="about-card" data-animate data-delay="80">
+                                    <div class="about-card__icon about-slide__icon about-slide__icon--violet" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 6v6l4 2"/>
+                                            <circle cx="12" cy="12" r="9"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="about-card__title">Регулярные релизы и улучшения</h3>
+                                    <p class="about-card__text">Система развивается постоянно — по реальным запросам партнёров и пользователей</p>
+                                </article>
+
+                                <div class="about-visual about-visual--blue" aria-hidden="true">
+                                    <div class="about-visual__meta">
+                                        <div class="about-visual__kicker">Релизы</div>
+                                        <div class="about-visual__title">Обновления без «обрывов»</div>
+                                        <div class="about-visual__sub">Запрос → решение → релиз → обновление</div>
+                                    </div>
+                                    <div class="about-visual__rail">
+                                        <div class="about-rail">
+                                            <span class="about-rail__dot is-on"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__dot"></span>
+                                            <span class="about-rail__line"></span>
+                                        </div>
+                                        <div class="about-rail__labels">
+                                            <span>Запрос</span>
+                                            <span>Решение</span>
+                                            <span>Релиз</span>
+                                            <span>Обновление</span>
+                                        </div>
+                                    </div>
+                                    <div class="about-visual__chips">
+                                        <span class="about-pill">быстро</span>
+                                        <span class="about-pill">прозрачно</span>
+                                        <span class="about-pill">без боли</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel__dots" aria-hidden="true" data-carousel-dots>
+                        <span class="dot is-active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wide about-stats">
+                <div class="about-stats__grid">
+                    <div class="about-stat" data-animate>
+                        <div class="about-stat__value">2+ лет</div>
+                        <div class="about-stat__text">на рынке WMS для фулфилментов</div>
+                    </div>
+                    <div class="about-stat" data-animate data-delay="120">
+                        <div class="about-stat__value">100+</div>
+                        <div class="about-stat__text">партнёров по всей России</div>
+                    </div>
+                    <div class="about-stat" data-animate data-delay="240">
+                        <div class="about-stat__value">24/7</div>
+                        <div class="about-stat__text">поддержка и развитие системы</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ЭКРАН 6 — КОНТАКТЫ
+             ======================================== -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <div class="section-head center">
+                    <h2 class="h2" data-animate>Запросите персональную презентацию</h2>
+                    <p class="lead" data-animate>Покажем систему на примере ваших процессов. Разберём, как Целиком решит ваши задачи.</p>
+                </div>
+
+                <div class="contact-shell" data-animate>
+                    <form class="contact-form contact-form--skeleton">
+                        <input type="hidden" name="tariff" id="selectedTariff" value="">
+                        <div class="picked-tariff" aria-live="polite">
+                            <span class="picked-tariff__label">Выбран тариф:</span>
+                            <strong class="picked-tariff__value" id="selectedTariffLabel">—</strong>
+                        </div>
+                        <div class="contact-row">
+                            <label class="field">
+                                <span>Имя</span>
+                                <input type="text" name="name" placeholder="Имя" autocomplete="name">
+                            </label>
+                            <label class="field">
+                                <span>Телефон</span>
+                                <input type="text" name="phone" placeholder="Телефон" autocomplete="tel">
+                            </label>
+                        </div>
+                        <label class="field">
+                            <span>Название компании</span>
+                            <input type="text" name="company" placeholder="Название компании" autocomplete="organization">
+                        </label>
+                        <label class="field">
+                            <span>Расскажите кратко о вашем складе (необязательно)</span>
+                            <textarea name="message" rows="4" placeholder="Расскажите кратко о вашем складе (необязательно)"></textarea>
+                        </label>
+                        <button type="button" class="btn-primary btn-large" id="contactSubmit">Запросить презентацию →</button>
+                        <p class="form-note">Нажимая «Запросить презентацию», вы соглашаетесь на обработку данных для связи.</p>
+                    </form>
+                </div>
+
+                <div class="contact-meta" data-animate data-delay="120">
+                    <div class="contact-meta__item">
+                        <span class="contact-meta__icon" aria-hidden="true">🕒</span>
+                        <span>Ответим в течение 10 минут</span>
+                    </div>
+                    <div class="contact-meta__item">
+                        <span class="contact-meta__icon" aria-hidden="true">💬</span>
+                        <span>В рабочее время</span>
+                    </div>
+                </div>
+
+                <div class="contact-actions" data-animate data-delay="180">
+                    <a href="https://t.me/celikom_support" class="btn-secondary btn-large" target="_blank">Telegram</a>
+                    <a href="mailto:hello@celikom.ru" class="btn-secondary btn-large">hello@celikom.ru</a>
+                </div>
+            </div>
+        </section>
         
     </main>
 
-    <!-- Footer (placeholder) -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__copyright">© 2024 Целиком. Все права защищены.</p>
+    <!-- Footer -->
+    <footer class="footer footer--apple">
+        <div class="container-wide footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <svg class="footer__logo-icon" viewBox="0 0 218 171" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M152.3,33.3V0h17v33.3c-2.5-1.3-5.4-2.1-8.5-2.1s-6,.8-8.5,2.1ZM142.3,49.6c0-4.5,1.6-8.6,4.3-11.8V0h-12.2c-2.6,0-4.8,2.1-4.8,4.8v47.2c0,2.6,2.1,4.8,4.8,4.8h9.4c-.9-2.2-1.4-4.6-1.4-7.1ZM174.9,0v37.8c2.7,3.2,4.3,7.3,4.3,11.8s-.5,4.9-1.4,7.1h9.4c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8h-12.2ZM87.1,62.4c.9,2.2,1.4,4.6,1.4,7.1,0,4.5-1.6,8.6-4.3,11.8v4.4c0,5.9,2.3,11.5,6.5,15.7,4.2,4.2,9.7,6.5,15.7,6.5h6.2v-12.2c0-2.6-2.1-4.8-4.8-4.8h-1.4c-2.8,0-5.1-2.3-5.1-5.1v-18.4c0-2.6-2.1-4.8-4.8-4.8h-9.4ZM125.3,109.1c-3.8,0-7.2,1.6-9.5,4.3h-11c-14.5,0-26.3-11.8-26.3-26.3v-1.3c-2.5,1.3-5.4,2.1-8.5,2.1s-6-.8-8.5-2.1v1.3c0,5.8,1.1,11.5,3.4,16.9,2.2,5.2,5.3,9.8,9.3,13.8s8.6,7.1,13.8,9.3c5.2,2.2,10.6,3.3,16.3,3.4h0s.6,0,.6,0h11c2.3,2.6,5.7,4.3,9.5,4.3,7,0,12.8-5.7,12.8-12.8s-5.7-12.8-12.8-12.8ZM55.9,88.9v-7.7c-2.7-3.2-4.3-7.3-4.3-11.8s.5-4.9,1.4-7.1h-9.4c-2.6,0-4.8,2.1-4.8,4.8v21.8c0,8.7,1.7,17.1,5,25,3.2,7.6,7.9,14.5,13.7,20.4,5.9,5.9,12.7,10.5,20.4,13.7,7.9,3.3,16.3,5,25,5h4.8c2.6,0,4.8-2.1,4.8-4.8v-12.2h-9.6c-26,0-47.1-21.1-47.1-47.1ZM96.5,0h-12.2v56.7h12.2c2.6,0,4.8-2.1,4.8-4.8V4.8c0-2.6-2.1-4.8-4.8-4.8ZM38.9,51.9V4.8C38.9,2.1,41,0,43.6,0h12.2v56.7h-12.2c-2.6,0-4.8-2.1-4.8-4.8ZM82.8,69.4c0,7-5.7,12.8-12.8,12.8s-12.8-5.7-12.8-12.8,1.6-7.2,4.3-9.5v-3.2h0V0h17v56.7h0v3.2c2.6,2.3,4.3,5.7,4.3,9.5ZM133.9,105.6c2.3-1.1,4.3-2.5,6.2-4.4,4.2-4.2,6.5-9.7,6.5-15.7v-23.2h-12.2c-2.6,0-4.8,2.1-4.8,4.8v18.4c0,2.8-2.3,5.1-5.1,5.1h-1.4c-2.6,0-4.8,2.1-4.8,4.8v9.4c2.2-.9,4.6-1.4,7.1-1.4s6,.8,8.6,2.1ZM152.3,59.1v3.2h0v24.7c0,9.7-5.2,18.1-13,22.7,2.8,3.2,4.5,7.5,4.5,12.1s-.2,3.4-.7,5c5.1-2.2,9.6-5.3,13.5-9.2,4-4,7.1-8.6,9.3-13.8,2.2-5.2,3.3-10.6,3.4-16.3h0v-.6s0,0,0,0v-24.7h0v-3.2c2.6-2.3,4.3-5.7,4.3-9.5,0-7-5.7-12.8-12.8-12.8s-12.8,5.7-12.8,12.8,1.6,7.2,4.3,9.5ZM180.1,110.3c.6.3,1.1.6,1.7.9,7.1,3.1,11.7,6.8,15.1,9.7,4,3.3,4.7,3.9,8.6,3.9h11.7c0,0,.1,0,.2,0,0,0,0-.9-.5-2.8h0c0,0,0-.1,0-.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-1.5-4.4-3.6-8.3-6.2-11.6-5.7-7.4-12.6-10.7-17.2-12.8-.5-.2-1-.5-1.6-.7v-29.3c0-2.6-2.1-4.8-4.8-4.8h-12.2v36.9c0,2.7.4,8.5,5.2,11.1ZM180.1,145.7c-4.9-4.3-11-9.6-25-9.6h-18c-3.2,2.7-7.3,4.3-11.8,4.3s-4.9-.5-7.1-1.4v9.4c0,2.6,2.1,4.8,4.8,4.8h32.1c7.6,0,9.8,1.9,13.8,5.4,2.8,2.5,6.3,5.5,11.8,7.9,5.9,2.5,13,3.7,21.9,3.7h10.1c2.6,0,4.8-2.1,4.8-4.8v-12.2h-14.8c-14.1,0-18-3.4-22.5-7.4ZM193.4,125.2c-3.8-3.1-8.5-6.9-16.4-9.9-2.8-1.1-5.9-1.9-9.3-2.6-2,3.3-4.4,6.3-7.1,9s-4.8,4.4-7.5,6.1c18.2,1.3,24.2,6.1,29.5,10.5,5.1,4.2,11,9,22.9,9h11.9v-17h-11.9c-5.9,0-7.8-1.6-12.2-5.1Z"/>
+                    </svg>
+                    <span class="footer__logo-text">Целиком</span>
+                </div>
+                <p class="footer__tagline">WMS для фулфилментов. Быстрое внедрение. Быстрая поддержка.</p>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Разделы</div>
+                <a class="footer__link" href="#hero">Главная</a>
+                <a class="footer__link" href="#functionality">Функционал</a>
+                <a class="footer__link" href="#implementation">Внедрение</a>
+                <a class="footer__link" href="#cases">Кейсы</a>
+                <a class="footer__link" href="#pricing">Цены</a>
+                <a class="footer__link" href="#about">О компании</a>
+                <a class="footer__link" href="#faq">Частые вопросы</a>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Контакты</div>
+                <a class="footer__link" href="https://t.me/celikom_support" target="_blank">Telegram</a>
+                <a class="footer__link" href="mailto:hello@celikom.ru">hello@celikom.ru</a>
+                <a class="footer__link" href="#contact">Презентация</a>
+            </div>
+        </div>
+
+        <div class="container-wide footer__bottom">
+            <p class="footer__copyright">© 2026 Целиком. Все права защищены.</p>
         </div>
     </footer>
+
+    <a href="#contact" class="floating-cta" id="floatingCta">Запросить презентацию</a>
 
     <script src="script.js"></script>
 </body>
