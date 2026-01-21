@@ -4031,8 +4031,8 @@ body.menu-open {
     .live-metric {
         grid-column: span 3; /* 4 tiles per row */
     }
-    .live-metric--mini {
-        grid-column: span 4; /* 3 tiles per row */
+    .live-metric--wide {
+        grid-column: span 6; /* 2 tiles per row */
     }
     .live-metric__value {
         font-size: 1.95rem;
