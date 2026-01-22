@@ -459,6 +459,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const roiCard = pricingStory.querySelector('.roi-card');
 
         if (container && stageEls.length > 0) {
+            function enableStaticPricing() {
+                pricingStory.classList.add('pricing-story--static');
+                container.style.height = 'auto';
+                stageEls.forEach(function(el) {
+                    el.classList.add('is-active');
+                    el.style.transform = '';
+                    el.style.opacity = '';
+                    el.style.pointerEvents = '';
+                });
+            }
+
+            function shouldFallbackToStatic() {
+                if (!isDesktop || prefersReducedMotion) return true; // mobile already behaves as static
+                const stickyH = sticky ? sticky.getBoundingClientRect().height : window.innerHeight;
+                const maxAllowed = Math.max(260, stickyH - 24);
+                return Array.from(stageEls).some(function(el) {
+                    return (el.scrollHeight || 0) > maxAllowed;
+                });
+            }
+
             if (isDesktop && !prefersReducedMotion) {
                 // give enough scroll room for smooth crossfades
                 container.style.height = (Math.max(2, stages) * 110) + 'vh';
@@ -466,6 +486,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 container.style.height = 'auto';
                 // On mobile show all stages (CSS may override; this is a safe fallback)
                 stageEls.forEach(function(el) { el.classList.add('is-active'); });
+            }
+
+            // If plans/ROI are taller than the sticky viewport, disable the slider to avoid overlays.
+            if (shouldFallbackToStatic()) {
+                enableStaticPricing();
+                return;
             }
 
             function updatePricing() {
@@ -482,13 +508,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const isTwoStages = stages === 2;
                 const tSlide = isTwoStages ? smoothstep(clamp((progress - 0.12) / 0.76, 0, 1)) : 0;
                 const viewportH = sticky ? sticky.getBoundingClientRect().height : window.innerHeight;
-                const dist = Math.max(520, viewportH * 1.05);
+                const distBase = Math.max(520, viewportH * 1.05);
 
                 stageEls.forEach(function(el) {
                     const s = parseInt(el.dataset.stage || '0', 10);
                     let w = 0;
                     let y = 0;
                     let sc = 1;
+                    const dist = Math.max(distBase, (el.scrollHeight || 0) + 80);
 
                     if (isTwoStages) {
                         if (s === 0) {

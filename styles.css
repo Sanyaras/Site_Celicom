@@ -975,6 +975,35 @@ button {
     }
 }
 
+/* If pricing content is tall, fall back to normal flow (no sticky slider) */
+.pricing-story--static .pricing-story__container {
+    height: auto;
+}
+
+.pricing-story--static .pricing-story__sticky {
+    position: relative;
+    top: auto;
+    min-height: auto;
+    overflow: visible;
+}
+
+.pricing-story--static .pricing-stage {
+    position: relative;
+    inset: auto;
+    display: block;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.pricing-story--static .pricing-stage + .pricing-stage {
+    margin-top: 1.25rem;
+}
+
+.pricing-story--static .pricing-story__progress {
+    display: none;
+}
+
 .plans {
     display: grid;
     grid-template-columns: 1fr;
