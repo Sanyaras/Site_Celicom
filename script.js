@@ -808,6 +808,21 @@ document.addEventListener('DOMContentLoaded', function() {
         let index = 0;
         let heightSyncedOnce = false;
 
+        function syncLinkedMock() {
+            // For the WOW block we optionally sync the right mockup with the active slide.
+            if ((root.dataset.carousel || '').toLowerCase() !== 'wow') return;
+            const active = slides[index];
+            if (!active) return;
+
+            const titleEl = root.querySelector('[data-wow-order-title]');
+            const statusEl = root.querySelector('[data-wow-order-status]');
+            const hintEl = root.querySelector('[data-wow-meter-hint]');
+
+            if (titleEl && active.dataset.mockupTitle) titleEl.textContent = active.dataset.mockupTitle;
+            if (statusEl && active.dataset.mockupStatus) statusEl.textContent = active.dataset.mockupStatus;
+            if (hintEl && active.dataset.mockupHint) hintEl.textContent = active.dataset.mockupHint;
+        }
+
         function syncViewportHeight(immediate) {
             if (!viewport) return;
             const active = slides[index];
@@ -851,6 +866,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 syncViewportHeight(!heightSyncedOnce);
                 heightSyncedOnce = true;
             });
+
+            // Keep linked mockup in sync (WOW section)
+            syncLinkedMock();
         }
 
         if (prevBtn) prevBtn.addEventListener('click', function() { setIndex(index - 1); });
@@ -864,6 +882,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         setIndex(0);
+
+        // Optional: change slides based on page scroll (WOW section only)
+        if (root.hasAttribute('data-carousel-scroll') && (root.dataset.carousel || '').toLowerCase() === 'wow') {
+            function updateFromScroll() {
+                // keep click/keyboard usable on mobile; scroll-sync is a desktop enhancement
+                if (!isDesktop || prefersReducedMotion) return;
+                const rect = root.getBoundingClientRect();
+                const total = Math.max(1, rect.height + window.innerHeight);
+                const p = clamp((window.innerHeight - rect.top) / total, 0, 1);
+                const nextIdx = clamp(Math.floor(p * slides.length), 0, slides.length - 1);
+                if (nextIdx !== index) setIndex(nextIdx);
+            }
+            scrollUpdates.push({ el: root, fn: updateFromScroll, pad: 800 });
+            updateFromScroll();
+        }
 
         // Keep height correct on resize / font load / images
         window.addEventListener('resize', function() { syncViewportHeight(false); });

@@ -4509,6 +4509,14 @@ body.menu-open {
     overflow: hidden;
 }
 
+@media (max-width: 640px) {
+    /* Prevent carousel nav buttons from overlapping text on small screens */
+    .wow-card .carousel__slide {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+}
+
 .wow-card__icon {
     width: 52px;
     height: 52px;
