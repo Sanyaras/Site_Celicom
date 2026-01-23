@@ -6243,10 +6243,6 @@ details[open] > .faq-q::after {
    MOBILE POLISH
    ===================================================== */
 
-html, body {
-    overflow-x: hidden;
-}
-
 @media (max-width: 640px) {
     /* Density */
     .section {
