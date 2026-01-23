@@ -270,7 +270,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const scale = scaleB;
             const x = lerp(0, 32, t1) + lerp(0, 36, t2);
             const y = lerp(0, -16, t0) + lerp(0, -18, t1) + lerp(0, -42, t2);
-            const opacity = 1 - t2;
+            // Keep the hero visible throughout the fold to avoid “empty white slides”.
+            const opacity = clamp(1 - (t2 * 0.85), 0.35, 1);
 
             if (mockup) {
                 mockup.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0) scale(' + scale.toFixed(3) + ')';
@@ -279,7 +280,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // text: subtle fold away
             if (content) {
-                const textFade = clamp(1 - (p * 0.7), 0.25, 1);
+                // Don't fade text too aggressively; keep it readable while scrolling.
+                const textFade = clamp(1 - (p * 0.45), 0.6, 1);
                 const tx = lerp(0, -10, t1);
                 const ty = lerp(0, -14, t0) + lerp(0, -10, t1);
                 content.style.opacity = textFade.toFixed(3);
@@ -294,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // floating cards: appear then collapse into mockup
             const appear = smoothstep(clamp(p / 0.12, 0, 1));
             const collapse = smoothstep(clamp((p - 0.22) / 0.28, 0, 1));
-            const cardOpacity = appear * (1 - collapse);
+            const cardOpacity = appear * (1 - (collapse * 0.9));
 
             floats.forEach(function(card) {
                 const cY = lerp(0, 18, collapse);

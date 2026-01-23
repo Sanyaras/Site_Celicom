@@ -1577,7 +1577,8 @@ body.menu-open {
    ===================================================== */
 .hero-fold {
     position: relative;
-    height: 220vh;
+    /* Less scroll “dead space” while keeping the effect */
+    height: 165vh;
 }
 
 .hero-fold__sticky {
