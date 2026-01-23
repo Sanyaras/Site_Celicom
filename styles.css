@@ -5437,6 +5437,15 @@ main {
     font-weight: 900;
 }
 
+.plan__list li.is-disabled {
+    opacity: 0.4;
+}
+
+.plan__list li.is-disabled::before {
+    content: "—";
+    color: var(--muted-foreground);
+}
+
 .pricing-under {
     margin-top: 1.6rem;
     display: grid;
@@ -6160,6 +6169,11 @@ details[open] > .faq-q::after {
     padding: 1.75rem;
     border-radius: var(--radius-xl);
     box-shadow: 0 30px 90px -70px rgba(0,0,0,0.55);
+}
+
+.contact-form--skeleton #contactSubmit {
+    display: block;
+    width: 100%;
 }
 
 .contact-row {
