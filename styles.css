@@ -38,7 +38,7 @@
     
     /* Отступы */
     --section-padding-y: 5rem;
-    --container-padding-x: 1rem;
+    --container-padding-x: 1.25rem;
     --container-max: 80rem;
 
     /* Fixed header height (for sticky math) */
@@ -75,6 +75,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section,
@@ -92,6 +93,7 @@ body {
     background-color: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 img, svg, video {
@@ -6361,6 +6363,117 @@ details[open] > .faq-q::after {
     /* Minor: tighten role cards */
     .role-card {
         padding: 1.1rem 1.1rem 1rem;
+    }
+
+    /* Fix alignment issues - center all CTAs and content */
+    .btn-primary,
+    .btn-secondary,
+    .btn-large {
+        text-align: center !important;
+        justify-content: center;
+        white-space: normal;
+    }
+
+    /* Center CTA buttons in cards and sections */
+    .plan__cta,
+    .roi-cta__card .btn-large,
+    .economy .btn-large,
+    .pricing-under .btn-large {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .plan__cta .btn-primary,
+    .plan__cta .btn-secondary {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Fix header overflow - ensure menu is not cut off */
+    .header__container {
+        padding-left: var(--container-padding-x);
+        padding-right: var(--container-padding-x);
+        max-width: 100%;
+        overflow-x: visible;
+    }
+
+    .header__burger,
+    .theme-toggle {
+        flex-shrink: 0;
+        margin-left: 0.5rem;
+    }
+
+    .header__cta {
+        display: none;
+    }
+
+    /* Center content in cards */
+    .roi-card,
+    .plan,
+    .panel-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Ensure text in buttons is centered */
+    .btn-primary,
+    .btn-secondary,
+    .btn-large {
+        text-align: center !important;
+    }
+
+    /* Fix ROI CTA card text alignment */
+    .roi-cta__card {
+        text-align: center;
+    }
+
+    .roi-cta__card .text {
+        text-align: center;
+    }
+
+    /* Center all CTA containers */
+    .center-cta,
+    .pricing-under,
+    .economy__cta,
+    .roi-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center ROI section content */
+    .roi__left {
+        text-align: center;
+    }
+
+    .roi__left .btn-large {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .roi__list {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    /* Ensure all cards are properly centered */
+    .roi__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roi-card {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
