@@ -1024,6 +1024,9 @@ button {
     padding: 2rem 1.75rem;
     position: relative;
     box-shadow: 0 18px 55px -40px rgba(0,0,0,0.35);
+    /* Align CTA buttons across cards (same baseline) */
+    display: flex;
+    flex-direction: column;
 }
 
 .plan--soft {
@@ -1678,6 +1681,7 @@ body.menu-open {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-top: 0.75rem;
 }
 
 /* Keep CTAs on a single line on desktop (psychological “two choices” trick) */
@@ -1685,6 +1689,23 @@ body.menu-open {
     .hero__cta {
         flex-wrap: nowrap;
         align-items: center;
+    }
+}
+
+/* Hero CTAs: slightly narrower + allow wrapping */
+.hero__cta .btn-primary,
+.hero__cta .btn-secondary {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0.85rem 1.15rem;
+    max-width: 320px;
+}
+
+@media (min-width: 1024px) {
+    .hero__cta .btn-primary,
+    .hero__cta .btn-secondary {
+        flex: 0 1 320px;
     }
 }
 
@@ -5387,7 +5408,7 @@ main {
    ===================================================== */
 .plan__cta {
     width: 100%;
-    margin-top: 1.15rem;
+    margin-top: auto;
 }
 
 .plan__list {
@@ -5395,6 +5416,8 @@ main {
     gap: 0.5rem;
     margin: 1rem 0 0;
     padding: 0;
+    /* Take remaining height so CTAs align across cards */
+    flex: 1 1 auto;
 }
 
 .plan__list li {
@@ -5603,6 +5626,24 @@ main {
 
 .roi-cta__card .h3 {
     margin-bottom: 0.35rem;
+}
+
+/* Add comfortable spacing between text and button */
+.roi-cta__card .text {
+    margin: 0.55rem 0 1.05rem;
+}
+
+/* "Changes 2–6 weeks" uses 3 tiles → keep it centered on desktop */
+@media (min-width: 768px) {
+    #changes .base-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #changes .base-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* =====================================================
