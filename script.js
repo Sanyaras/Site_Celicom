@@ -989,9 +989,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const rect = chatSection.getBoundingClientRect();
             const total = rect.height + window.innerHeight;
-            const progress = clamp((window.innerHeight - rect.top) / Math.max(1, total), 0, 1);
+            // Make the first message/step visible immediately when the section enters the viewport.
+            // Without this bias, on some layouts the progress may stay below the first threshold
+            // and the chat/timeline looks "empty".
+            let progress = clamp((window.innerHeight - rect.top) / Math.max(1, total), 0, 1);
+            progress = clamp(progress + 0.08, 0, 1);
 
-            const thresholds = [0.12, 0.28, 0.5, 0.68, 0.82]; // msg1..msg4 + resolved
+            const thresholds = [0.02, 0.22, 0.44, 0.62, 0.78]; // msg1..msg4 + resolved
 
             messages.forEach(function(msg) {
                 const id = parseInt(msg.dataset.msg || '0', 10);
